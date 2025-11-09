@@ -1,4 +1,4 @@
-import { HlmItem, HlmItemImports } from '@spartan-ng/helm/item';
+import { HlmItem, HlmItemImports } from 'grg-ui-ui/helm/item';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

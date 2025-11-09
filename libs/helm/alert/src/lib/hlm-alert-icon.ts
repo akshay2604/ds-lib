@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { provideHlmIconConfig } from '@spartan-ng/helm/icon';
+import { provideHlmIconConfig } from 'grg-ui-ui/helm/icon';
 
 @Directive({
 	selector: '[hlmAlertIcon]',

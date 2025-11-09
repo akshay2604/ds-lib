@@ -2,7 +2,7 @@ import { type Tree, formatFiles, readJsonFile, updateJson } from '@nx/devkit';
 import process from 'node:process';
 
 const getSpartanDependencyKeys = (dependencies?: Record<string, string>): string[] =>
-	Object.keys(dependencies ?? {}).filter((key) => key.startsWith('@spartan-ng'));
+	Object.keys(dependencies ?? {}).filter((key) => key.startsWith('grg-ui-ui'));
 
 export const replaceSpartanVersion = (content: string, oldVersion: string, newVersion: string): string => {
 	/**

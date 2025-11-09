@@ -1,6 +1,6 @@
 // src/app/directives/hlm-table-directives.ts
 import { computed, Directive, inject, InjectionToken, input, type ValueProvider } from '@angular/core';
-import { hlm } from '@spartan-ng/helm/utils';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 // Configuration Interface and InjectionToken

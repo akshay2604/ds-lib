@@ -3,11 +3,11 @@ import { Component, input, signal } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideBold, lucideItalic, lucideUnderline } from '@ng-icons/lucide';
-import { ToggleType } from '@spartan-ng/brain/toggle-group';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmToggleGroup, HlmToggleGroupImports } from '@spartan-ng/helm/toggle-group';
-import { hlmP } from '@spartan-ng/helm/typography';
+import { ToggleType } from 'grg-ui-ui/brain/toggle-group';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmToggleGroup, HlmToggleGroupImports } from 'grg-ui-ui/helm/toggle-group';
+import { hlmP } from 'grg-ui-ui/helm/typography';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { argsToTemplate, moduleMetadata } from '@storybook/angular';
 

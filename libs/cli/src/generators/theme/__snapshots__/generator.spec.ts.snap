@@ -4,7 +4,7 @@ exports[`Theme generator should add the gray theme styles to the global styleshe
 "@import "@angular/cdk/overlay-prebuilt.css";
 
 @import "tailwindcss";
-@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "grg-ui-ui/brain/hlm-tailwind-preset.css";
 
 :root {
 color-scheme: light;
@@ -85,7 +85,7 @@ exports[`Theme generator should add the neutral theme styles to the global style
 "@import "@angular/cdk/overlay-prebuilt.css";
 
 @import "tailwindcss";
-@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "grg-ui-ui/brain/hlm-tailwind-preset.css";
 
 :root {
 color-scheme: light;
@@ -166,7 +166,7 @@ exports[`Theme generator should add the slate theme styles to the global stylesh
 "@import "@angular/cdk/overlay-prebuilt.css";
 
 @import "tailwindcss";
-@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "grg-ui-ui/brain/hlm-tailwind-preset.css";
 
 :root {
 color-scheme: light;
@@ -247,7 +247,7 @@ exports[`Theme generator should add the stone theme styles to the global stylesh
 "@import "@angular/cdk/overlay-prebuilt.css";
 
 @import "tailwindcss";
-@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "grg-ui-ui/brain/hlm-tailwind-preset.css";
 
 :root {
 color-scheme: light;
@@ -328,7 +328,7 @@ exports[`Theme generator should add the zinc theme styles to the global styleshe
 "@import "@angular/cdk/overlay-prebuilt.css";
 
 @import "tailwindcss";
-@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "grg-ui-ui/brain/hlm-tailwind-preset.css";
 
 :root {
 color-scheme: light;

@@ -1,4 +1,4 @@
-import { HlmSpinner } from '@spartan-ng/helm/spinner';
+import { HlmSpinner } from 'grg-ui-ui/helm/spinner';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmSpinner> = {

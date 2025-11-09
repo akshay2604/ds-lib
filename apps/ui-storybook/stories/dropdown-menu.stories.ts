@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import * as lucide from '@ng-icons/lucide';
-import { BrnMenuTrigger } from '@spartan-ng/brain/menu';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmMenu, HlmMenuImports, HlmMenuItemCheck, HlmMenuItemRadio } from '@spartan-ng/helm/menu';
+import { BrnMenuTrigger } from 'grg-ui-ui/brain/menu';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmMenu, HlmMenuImports, HlmMenuItemCheck, HlmMenuItemRadio } from 'grg-ui-ui/helm/menu';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmMenu> = {

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { provideIcons } from '@ng-icons/core';
 import { lucideCheckCircle2, lucideChevronDown, lucideCircle, lucideHelpCircle, lucideLink } from '@ng-icons/lucide';
-import { BrnNavigationMenuImports } from '@spartan-ng/brain/navigation-menu';
-import { HlmIconImports } from '@spartan-ng/helm/icon';
-import { HlmNavigationMenuImports } from '@spartan-ng/helm/navigation-menu';
+import { BrnNavigationMenuImports } from 'grg-ui-ui/brain/navigation-menu';
+import { HlmIconImports } from 'grg-ui-ui/helm/icon';
+import { HlmNavigationMenuImports } from 'grg-ui-ui/helm/navigation-menu';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 
@@ -30,7 +30,7 @@ import { moduleMetadata } from '@storybook/angular';
 									class="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-4 no-underline outline-hidden select-none focus:shadow-md md:p-6"
 									href="/"
 								>
-									<div class="mb-2 text-lg font-medium sm:mt-4">spartan.ng</div>
+									<div class="mb-2 text-lg font-medium sm:mt-4">grg-ui.ng</div>
 									<p class="text-muted-foreground text-sm leading-tight">
 										Beautifully designed components built with Tailwind CSS.
 									</p>

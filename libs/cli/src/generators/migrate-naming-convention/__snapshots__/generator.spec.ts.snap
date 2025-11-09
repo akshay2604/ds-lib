@@ -9,11 +9,11 @@ import {
 	HlmAccordionIcon,
 	HlmAccordionItem,
 	HlmAccordionTrigger,
-} from '@spartan-ng/helm/accordion';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+} from 'grg-ui-ui/helm/accordion';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 
 @Component({
-	selector: 'spartan-accordion-preview',
+	selector: 'grg-ui-accordion-preview',
 	imports: [
 		HlmAccordion,
 		HlmAccordionItem,
@@ -80,12 +80,12 @@ export class AccordionPreviewComponent {}"
 
 exports[`migrate-naming-conventions generator should rename the identifiers that changed name 1`] = `
 "import { Component } from '@angular/core';
-import { BrnTooltipContentTemplate } from '@spartan-ng/brain/tooltip';
-import {HlmMenuItemRadioIndicator} from '@spartan-ng/helm/menu';
-import { BrnSelectValueTemplate } from '@spartan-ng/brain/select';
+import { BrnTooltipContentTemplate } from 'grg-ui-ui/brain/tooltip';
+import {HlmMenuItemRadioIndicator} from 'grg-ui-ui/helm/menu';
+import { BrnSelectValueTemplate } from 'grg-ui-ui/brain/select';
 
 @Component({
-	selector: 'spartan-tooltip-preview',
+	selector: 'grg-ui-tooltip-preview',
 	imports: [BrnTooltipContentTemplate, HlmMenuItemRadioIndicator, BrnSelectValueTemplate],
 	template: \`
 		<brn-tooltip>
@@ -104,17 +104,17 @@ exports[`migrate-naming-conventions generator should replace brain identifiers 1
 import { Component, signal } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideCheck, lucideChevronsUpDown, lucideSearch } from '@ng-icons/lucide';
-import { BrnCommandImports } from '@spartan-ng/brain/command';
-import { BrnPopover, BrnPopoverContent, BrnPopoverTrigger } from '@spartan-ng/brain/popover';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmCommandImports } from '@spartan-ng/helm/command';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmPopoverContent } from '@spartan-ng/helm/popover';
+import { BrnCommandImports } from 'grg-ui-ui/brain/command';
+import { BrnPopover, BrnPopoverContent, BrnPopoverTrigger } from 'grg-ui-ui/brain/popover';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmCommandImports } from 'grg-ui-ui/helm/command';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmPopoverContent } from 'grg-ui-ui/helm/popover';
 
 type Framework = { label: string; value: string };
 
 @Component({
-	selector: 'spartan-combobox-preview',
+	selector: 'grg-ui-combobox-preview',
 	imports: [
 		BrnCommandImports,
 		HlmCommandImports,

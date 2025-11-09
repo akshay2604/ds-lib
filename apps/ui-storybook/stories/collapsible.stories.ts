@@ -1,5 +1,5 @@
-import { BrnCollapsible, BrnCollapsibleImports } from '@spartan-ng/brain/collapsible';
-import { HlmButton } from '@spartan-ng/helm/button';
+import { BrnCollapsible, BrnCollapsibleImports } from 'grg-ui-ui/brain/collapsible';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { argsToTemplate, moduleMetadata } from '@storybook/angular';
 

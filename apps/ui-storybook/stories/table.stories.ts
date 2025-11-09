@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { faker } from '@faker-js/faker';
-import { HlmTable, HlmTableImports } from '@spartan-ng/helm/table';
+import { HlmTable, HlmTableImports } from 'grg-ui-ui/helm/table';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const createUsers = (numUsers = 5) => {

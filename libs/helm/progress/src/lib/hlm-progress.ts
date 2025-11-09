@@ -1,6 +1,6 @@
 import { computed, Directive, input } from '@angular/core';
-import { BrnProgress } from '@spartan-ng/brain/progress';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnProgress } from 'grg-ui-ui/brain/progress';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

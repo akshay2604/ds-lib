@@ -2,7 +2,7 @@ import { NgComponentOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, inject, input } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideX } from '@ng-icons/lucide';
-import { BrnDialogClose, BrnDialogRef, injectBrnDialogContext } from '@spartan-ng/brain/dialog';
+import { BrnDialogClose, BrnDialogRef, injectBrnDialogContext } from 'grg-ui-ui/brain/dialog';
 import { HlmIcon } from '<%- importAlias %>/icon';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';

@@ -67,12 +67,12 @@ function deduplicateImports(tree: Tree) {
 
 		try {
 			let contents = tree.read(path)!.toString();
-			if (!contents.includes('@spartan-ng/brain') && !contents.includes('@spartan-ng/helm')) return;
+			if (!contents.includes('grg-ui-ui/brain') && !contents.includes('grg-ui-ui/helm')) return;
 
 			// -----------------------------
 			// Step 1: Deduplicate import statements (brain + helm)
 			// -----------------------------
-			const importRegex = /import\s+{([^}]+)}\s+from\s+'(@spartan-ng\/(brain|helm)\/[^']+)';/g;
+			const importRegex = /import\s+{([^}]+)}\s+from\s+'(grg-ui-ui\/(brain|helm)\/[^']+)';/g;
 
 			const importMap: Record<string, Set<string>> = {};
 

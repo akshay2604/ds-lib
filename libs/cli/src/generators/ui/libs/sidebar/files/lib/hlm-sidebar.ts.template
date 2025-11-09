@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
-import { BrnSheetContent } from '@spartan-ng/brain/sheet';
+import { BrnSheetContent } from 'grg-ui-ui/brain/sheet';
 import { HlmSheet, HlmSheetContent } from '<%- importAlias %>/sheet';
 import { hlm } from '<%- importAlias %>/utils';
 

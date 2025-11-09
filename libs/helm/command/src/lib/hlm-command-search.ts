@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { provideHlmIconConfig } from '@spartan-ng/helm/icon';
-import { hlm } from '@spartan-ng/helm/utils';
+import { provideHlmIconConfig } from 'grg-ui-ui/helm/icon';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

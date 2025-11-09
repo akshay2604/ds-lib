@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { injectDateAdapter } from '@spartan-ng/brain/date-time';
+import { injectDateAdapter } from 'grg-ui-ui/brain/date-time';
 import { injectBrnCalendar } from './brn-calendar.token';
 import { injectBrnCalendarI18n } from './i18n/calendar-i18n';
 

@@ -1,6 +1,6 @@
 import { computed, Directive, effect, inject } from '@angular/core';
-import { injectDateAdapter } from '@spartan-ng/brain/date-time';
-import { BrnSelect } from '@spartan-ng/brain/select';
+import { injectDateAdapter } from 'grg-ui-ui/brain/date-time';
+import { BrnSelect } from 'grg-ui-ui/brain/select';
 import { injectBrnCalendar } from './brn-calendar.token';
 import { injectBrnCalendarI18n } from './i18n/calendar-i18n';
 

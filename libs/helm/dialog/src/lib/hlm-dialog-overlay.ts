@@ -1,6 +1,6 @@
 import { Directive, computed, effect, input, untracked } from '@angular/core';
-import { injectCustomClassSettable } from '@spartan-ng/brain/core';
-import { hlm } from '@spartan-ng/helm/utils';
+import { injectCustomClassSettable } from 'grg-ui-ui/brain/core';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 export const hlmDialogOverlayClass =

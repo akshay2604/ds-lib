@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnMenu } from '@spartan-ng/brain/menu';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnMenu } from 'grg-ui-ui/brain/menu';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

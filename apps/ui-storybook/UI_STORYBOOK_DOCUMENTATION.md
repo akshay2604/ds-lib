@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `ui-storybook` application is a comprehensive Storybook implementation that showcases all components from the `@spartan-ng/helm` design system. It serves as both a development tool for component testing and a living documentation system for the Spartan Angular UI library. This Storybook instance provides an interactive playground where developers can explore, test, and understand the behavior of all available components.
+The `ui-storybook` application is a comprehensive Storybook implementation that showcases all components from the `grg-ui-ui/helm` design system. It serves as both a development tool for component testing and a living documentation system for the Spartan Angular UI library. This Storybook instance provides an interactive playground where developers can explore, test, and understand the behavior of all available components.
 
 ## Architecture
 
@@ -35,7 +35,7 @@ apps/ui-storybook/
 - **Project Name**: `ui-storybook`
 - **Project Type**: Library (Storybook application)
 - **Source Root**: `apps/ui-storybook/src`
-- **Prefix**: `spartan-ng`
+- **Prefix**: `grg-ui`
 - **Port**: `4400`
 - **Build System**: Nx with Storybook Angular
 
@@ -201,7 +201,7 @@ When adding new components to the Helm library, follow this pattern for creating
 
 ```typescript
 // Example: new-component.stories.ts
-import { HlmNewComponent } from '@spartan-ng/helm/new-component';
+import { HlmNewComponent } from 'grg-ui-ui/helm/new-component';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmNewComponent> = {

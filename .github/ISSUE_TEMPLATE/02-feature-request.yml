@@ -1,12 +1,12 @@
 name: Feature Request
-description: Request a new or improved a feature in SPARTAN UI
+description: Request a new or improved a feature in GRG-UI UI
 labels: [enhancement]
 
 body:
   - type: markdown
     attributes:
       value: |
-        Please search GitHub for a similar [issue](https://github.com/goetzrobin/spartan/issues) or [PR](https://github.com/goetzrobin/spartan/issues)  before submitting a new issue.
+        Please search GitHub for a similar [issue](https://github.com/goetzrobin/grg-ui/issues) or [PR](https://github.com/goetzrobin/grg-ui/issues)  before submitting a new issue.
   - type: dropdown
     id: type_bug
     attributes:
@@ -78,7 +78,7 @@ body:
     id: information
     attributes:
       label: Information
-      description: Tell us what you want to be added to SPARTAN UI
+      description: Tell us what you want to be added to GRG-UI UI
     validations:
       required: true
 

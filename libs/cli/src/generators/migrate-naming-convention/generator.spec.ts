@@ -45,11 +45,11 @@ import {
 	HlmAccordionIconDirective,
 	HlmAccordionItemDirective,
 	HlmAccordionTriggerDirective,
-} from '@spartan-ng/helm/accordion';
-import { HlmIconDirective } from '@spartan-ng/helm/icon';
+} from 'grg-ui-ui/helm/accordion';
+import { HlmIconDirective } from 'grg-ui-ui/helm/icon';
 
 @Component({
-	selector: 'spartan-accordion-preview',
+	selector: 'grg-ui-accordion-preview',
 	imports: [
 		HlmAccordionDirective,
 		HlmAccordionItemDirective,
@@ -127,17 +127,17 @@ export class AccordionPreviewComponent {}`,
 import { Component, signal } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideCheck, lucideChevronsUpDown, lucideSearch } from '@ng-icons/lucide';
-import { BrnCommandImports } from '@spartan-ng/brain/command';
-import { BrnPopoverComponent, BrnPopoverContentDirective, BrnPopoverTriggerDirective } from '@spartan-ng/brain/popover';
-import { HlmButtonDirective } from '@spartan-ng/helm/button';
-import { HlmCommandImports } from '@spartan-ng/helm/command';
-import { HlmIconDirective } from '@spartan-ng/helm/icon';
-import { HlmPopoverContentDirective } from '@spartan-ng/helm/popover';
+import { BrnCommandImports } from 'grg-ui-ui/brain/command';
+import { BrnPopoverComponent, BrnPopoverContentDirective, BrnPopoverTriggerDirective } from 'grg-ui-ui/brain/popover';
+import { HlmButtonDirective } from 'grg-ui-ui/helm/button';
+import { HlmCommandImports } from 'grg-ui-ui/helm/command';
+import { HlmIconDirective } from 'grg-ui-ui/helm/icon';
+import { HlmPopoverContentDirective } from 'grg-ui-ui/helm/popover';
 
 type Framework = { label: string; value: string };
 
 @Component({
-	selector: 'spartan-combobox-preview',
+	selector: 'grg-ui-combobox-preview',
 	imports: [
 		BrnCommandImports,
 		HlmCommandImports,
@@ -244,12 +244,12 @@ export class ComboboxPreviewComponent {
 		tree.write(
 			'app/src/app/app.component.ts',
 			`import { Component } from '@angular/core';
-import { BrnTooltipContentDirective } from '@spartan-ng/brain/tooltip';
-import {HlmMenuItemRadioComponent} from '@spartan-ng/helm/menu';
-import { BrnSelectValueDirective } from '@spartan-ng/brain/select';
+import { BrnTooltipContentDirective } from 'grg-ui-ui/brain/tooltip';
+import {HlmMenuItemRadioComponent} from 'grg-ui-ui/helm/menu';
+import { BrnSelectValueDirective } from 'grg-ui-ui/brain/select';
 
 @Component({
-	selector: 'spartan-tooltip-preview',
+	selector: 'grg-ui-tooltip-preview',
 	imports: [BrnTooltipContentDirective, HlmMenuItemRadioComponent, BrnSelectValueDirective],
 	template: \`
 		<brn-tooltip>

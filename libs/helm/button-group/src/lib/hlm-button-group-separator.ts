@@ -1,6 +1,6 @@
 import { computed, Directive, input } from '@angular/core';
-import { BrnSeparator, provideBrnSeparatorConfig } from '@spartan-ng/brain/separator';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnSeparator, provideBrnSeparatorConfig } from 'grg-ui-ui/brain/separator';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

@@ -1,6 +1,6 @@
 import { computed, Directive, effect, inject, input } from '@angular/core';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { hlm } from '@spartan-ng/helm/utils';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

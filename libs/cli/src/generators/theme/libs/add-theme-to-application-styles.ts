@@ -28,7 +28,7 @@ export async function addThemeToApplicationStyles(
 			message: `Please note that we cannot guarantee full compatibility of the components with Tailwind CSS version 3, and some features may not function as expected. Are you sure you want to proceed with Tailwind CSS v3?`,
 		});
 	}
-	const tailwindImport = tailwindVersion === 4 ? '@import "@spartan-ng/brain/hlm-tailwind-preset.css";' : '';
+	const tailwindImport = tailwindVersion === 4 ? '@import "grg-ui-ui/brain/hlm-tailwind-preset.css";' : '';
 
 	const prefix = options.prefix ? ` .${options.prefix}` : '';
 	let stylesEntryPoint = options.stylesEntryPoint;

@@ -40,8 +40,8 @@ describe('migrate-toggle-group generator', () => {
 			`
 				import { NgModule } from '@angular/core';
 				import { BrowserModule } from '@angular/platform-browser';
-				import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';
-				import { HlmToggleGroup } from '@spartan-ng/helm/toggle-group';
+				import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';
+				import { HlmToggleGroup } from 'grg-ui-ui/helm/toggle-group';
 	
 				@NgModule({
 					imports: [BrowserModule, BrnToggleGroup, HlmToggleGroup],
@@ -53,7 +53,7 @@ describe('migrate-toggle-group generator', () => {
 		await migrateBrnToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.module.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';`);
+		expect(content).not.toContain(`import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';`);
 		expect(content).toContain(`imports: [BrowserModule, HlmToggleGroup],`);
 	});
 
@@ -63,8 +63,8 @@ describe('migrate-toggle-group generator', () => {
 			`
 				import { NgModule } from '@angular/core';
 				import { BrowserModule } from '@angular/platform-browser';
-				import { BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';
-				import { HlmToggleGroupItem } from '@spartan-ng/helm/toggle-group';
+				import { BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';
+				import { HlmToggleGroupItem } from 'grg-ui-ui/helm/toggle-group';
 	
 				@NgModule({
 					imports: [BrowserModule, BrnToggleGroupItem, HlmToggleGroupItem],
@@ -76,7 +76,7 @@ describe('migrate-toggle-group generator', () => {
 		await migrateBrnToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.module.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';`);
+		expect(content).not.toContain(`import { BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';`);
 		expect(content).toContain(`imports: [BrowserModule, HlmToggleGroupItem],`);
 	});
 
@@ -86,8 +86,8 @@ describe('migrate-toggle-group generator', () => {
 			`
 				import { NgModule } from '@angular/core';
 				import { BrowserModule } from '@angular/platform-browser';
-				import { BrnToggleGroup, BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';
-				import { HlmToggleGroup, HlmToggleGroupItem } from '@spartan-ng/helm/toggle-group';
+				import { BrnToggleGroup, BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';
+				import { HlmToggleGroup, HlmToggleGroupItem } from 'grg-ui-ui/helm/toggle-group';
 	
 				@NgModule({
 					imports: [BrowserModule, BrnToggleGroup, BrnToggleGroupItem, HlmToggleGroup, HlmToggleGroupItem],
@@ -100,7 +100,7 @@ describe('migrate-toggle-group generator', () => {
 
 		const content = tree.read('app/src/app/app.module.ts', 'utf-8');
 		expect(content).not.toContain(
-			`import { BrnToggleGroup, BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';`,
+			`import { BrnToggleGroup, BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';`,
 		);
 		expect(content).toContain(`imports: [BrowserModule, HlmToggleGroup, HlmToggleGroupItem],`);
 	});
@@ -110,8 +110,8 @@ describe('migrate-toggle-group generator', () => {
 			'app/src/app/app.component.ts',
 			`
 					import { Component } from '@angular/core';
-					import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';
-					import { HlmToggleGroup } from '@spartan-ng/helm/toggle-group';
+					import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';
+					import { HlmToggleGroup } from 'grg-ui-ui/helm/toggle-group';
 					@Component({
 						imports: [BrnToggleGroup, HlmToggleGroup],
 						template: \`
@@ -125,8 +125,8 @@ describe('migrate-toggle-group generator', () => {
 		await migrateBrnToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';`);
-		expect(content).toContain(`import { HlmToggleGroup } from '@spartan-ng/helm/toggle-group';`);
+		expect(content).not.toContain(`import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';`);
+		expect(content).toContain(`import { HlmToggleGroup } from 'grg-ui-ui/helm/toggle-group';`);
 		expect(content).toContain(`imports: [HlmToggleGroup],`);
 		expect(content).toContain(`<hlm-toggle-group type="multiple">...</hlm-toggle-group>`);
 	});
@@ -136,8 +136,8 @@ describe('migrate-toggle-group generator', () => {
 			'app/src/app/app.component.ts',
 			`
 					import { Component } from '@angular/core';
-					import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';
-					import { HlmToggleGroup } from '@spartan-ng/helm/toggle-group';
+					import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';
+					import { HlmToggleGroup } from 'grg-ui-ui/helm/toggle-group';
 					@Component({
 						imports: [BrnToggleGroup, HlmToggleGroup],
 						template: \`
@@ -151,7 +151,7 @@ describe('migrate-toggle-group generator', () => {
 		await migrateBrnToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';`);
+		expect(content).not.toContain(`import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';`);
 		expect(content).toContain(`<hlm-toggle-group type="single">...</hlm-toggle-group>`);
 	});
 
@@ -160,8 +160,8 @@ describe('migrate-toggle-group generator', () => {
 			'app/src/app/app.component.ts',
 			`
 					import { Component } from '@angular/core';
-					import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';
-					import { HlmToggleGroup } from '@spartan-ng/helm/toggle-group';
+					import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';
+					import { HlmToggleGroup } from 'grg-ui-ui/helm/toggle-group';
 					@Component({
 						imports: [BrnToggleGroup, HlmToggleGroup],
 						template: \`
@@ -175,7 +175,7 @@ describe('migrate-toggle-group generator', () => {
 		await migrateBrnToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';`);
+		expect(content).not.toContain(`import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';`);
 		expect(content).toContain(`<hlm-toggle-group type="multiple">...</hlm-toggle-group>`);
 	});
 });

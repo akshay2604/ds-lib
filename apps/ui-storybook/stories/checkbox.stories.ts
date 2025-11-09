@@ -5,10 +5,10 @@ import { moduleMetadata } from '@storybook/angular';
 import { JsonPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { HlmButton, HlmButtonImports } from '@spartan-ng/helm/button';
-import { HlmCheckbox, HlmCheckboxImports } from '@spartan-ng/helm/checkbox';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmLabel } from '@spartan-ng/helm/label';
+import { HlmButton, HlmButtonImports } from 'grg-ui-ui/helm/button';
+import { HlmCheckbox, HlmCheckboxImports } from 'grg-ui-ui/helm/checkbox';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
 
 @Component({
 	selector: 'hlm-checkbox-component-tester',

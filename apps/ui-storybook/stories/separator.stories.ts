@@ -1,5 +1,5 @@
-import { BrnSeparator } from '@spartan-ng/brain/separator';
-import { HlmSeparator } from '@spartan-ng/helm/separator';
+import { BrnSeparator } from 'grg-ui-ui/brain/separator';
+import { HlmSeparator } from 'grg-ui-ui/helm/separator';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<BrnSeparator> = {

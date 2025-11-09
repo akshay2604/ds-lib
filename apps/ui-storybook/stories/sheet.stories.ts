@@ -1,7 +1,7 @@
-import { BrnSheet, BrnSheetContent, BrnSheetTrigger } from '@spartan-ng/brain/sheet';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmSheetImports } from '@spartan-ng/helm/sheet';
+import { BrnSheet, BrnSheetContent, BrnSheetTrigger } from 'grg-ui-ui/brain/sheet';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmSheetImports } from 'grg-ui-ui/helm/sheet';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 export type SheetProps = { side: 'top' | 'bottom' | 'left' | 'right' };

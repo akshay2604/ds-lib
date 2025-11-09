@@ -1,11 +1,11 @@
 import { Component, inject, type OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@spartan-ng/brain/forms';
-import { BrnSelectImports } from '@spartan-ng/brain/select';
-import { HlmButton, HlmButtonImports } from '@spartan-ng/helm/button';
-import { HlmFormField, HlmFormFieldImports } from '@spartan-ng/helm/form-field';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmSelectImports } from '@spartan-ng/helm/select';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from 'grg-ui-ui/brain/forms';
+import { BrnSelectImports } from 'grg-ui-ui/brain/select';
+import { HlmButton, HlmButtonImports } from 'grg-ui-ui/helm/button';
+import { HlmFormField, HlmFormFieldImports } from 'grg-ui-ui/helm/form-field';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmSelectImports } from 'grg-ui-ui/helm/select';
 import { type Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 
 const meta: Meta<HlmFormField> = {

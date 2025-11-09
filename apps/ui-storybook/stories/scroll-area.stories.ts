@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HlmScrollArea } from '@spartan-ng/helm/scroll-area';
-import { HlmSeparator } from '@spartan-ng/helm/separator';
+import { HlmScrollArea } from 'grg-ui-ui/helm/scroll-area';
+import { HlmSeparator } from 'grg-ui-ui/helm/separator';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { argsToTemplate, moduleMetadata } from '@storybook/angular';
 import { NgScrollbar, NgScrollbarModule } from 'ngx-scrollbar';

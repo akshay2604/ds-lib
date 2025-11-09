@@ -1,3 +1,3 @@
-# @spartan-ng/helm/icon
+# grg-ui-ui/helm/icon
 
-Secondary entry point of `@spartan-ng/helm`. It can be used by importing from `@spartan-ng/helm/icon`.
+Secondary entry point of `grg-ui-ui/helm`. It can be used by importing from `grg-ui-ui/helm/icon`.

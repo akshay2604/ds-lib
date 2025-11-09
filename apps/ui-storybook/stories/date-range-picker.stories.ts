@@ -1,4 +1,4 @@
-import { HlmDatePickerMulti, HlmDateRangePicker } from '@spartan-ng/helm/date-picker';
+import { HlmDatePickerMulti, HlmDateRangePicker } from 'grg-ui-ui/helm/date-picker';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmDateRangePicker<Date>> = {

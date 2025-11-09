@@ -208,20 +208,20 @@ function replaceProvideIcons(tree: Tree) {
 
 		let content = tree.read(path, 'utf-8');
 
-		// if the user is importing `provideIcons` from '@spartan-ng/ui-icon-helm' then we need to replace it with `provideIcons` from '@ng-icons/core'
+		// if the user is importing `provideIcons` from 'grg-ui-ui/ui-icon-helm' then we need to replace it with `provideIcons` from '@ng-icons/core'
 		if (!content || !content?.includes('provideIcons')) {
 			return;
 		}
 
 		const sourceFile = ts.createSourceFile(path, content, ts.ScriptTarget.Latest, true);
 
-		if (!isImported(sourceFile, 'provideIcons', '@spartan-ng/ui-icon-helm')) {
+		if (!isImported(sourceFile, 'provideIcons', 'grg-ui-ui/ui-icon-helm')) {
 			return;
 		}
 
 		const changes: StringChange[] = [];
 
-		// remove the import of provideIcons from '@spartan-ng/ui-icon-helm'
+		// remove the import of provideIcons from 'grg-ui-ui/ui-icon-helm'
 		// add the import of provideIcons from '@ng-icons/core'
 		changes.push({
 			type: ChangeType.Delete,

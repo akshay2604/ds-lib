@@ -1,7 +1,7 @@
 import { replaceSpartanVersion } from './generator';
 
 describe('replaceSpartanVersions', () => {
-	it('should replace only SPARTAN-prefixed versions that match oldVersion', () => {
+	it('should replace only GRG-UI-prefixed versions that match oldVersion', () => {
 		const input = `
       export const FALLBACK_ANGULAR_VERSION = '^18.0.0';
       export const SPARTAN_VERSION = '3.0.2';

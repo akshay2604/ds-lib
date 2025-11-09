@@ -29,7 +29,7 @@ jobs:
         uses: wagoid/commitlint-github-action@v5
         with:
           failOnWarnings: true
-          helpURL: https://github.com/goetzrobin/spartan/blob/main/CONTRIBUTING.md#-commit-message-guidelines
+          helpURL: https://github.com/goetzrobin/grg-ui/blob/main/CONTRIBUTING.md#-commit-message-guidelines
 
   format-and-lint:
     runs-on: ubuntu-latest

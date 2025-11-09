@@ -1,10 +1,10 @@
 import { NgIcon } from '@ng-icons/core';
-import { BrnPopover, BrnPopoverImports } from '@spartan-ng/brain/popover';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmPopoverImports } from '@spartan-ng/helm/popover';
+import { BrnPopover, BrnPopoverImports } from 'grg-ui-ui/brain/popover';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmPopoverImports } from 'grg-ui-ui/helm/popover';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<BrnPopover> = {

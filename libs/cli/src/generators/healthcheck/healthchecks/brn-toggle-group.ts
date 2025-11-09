@@ -18,11 +18,11 @@ export const brainToggleGroupHealthcheck: Healthcheck = {
 			}
 
 			if (
-				contents.includes("BrnToggleGroupModule } from '@spartan-ng/brain/toggle'") ||
-				contents.includes("import { BrnToggleGroupModule } from '@spartan-ng/brain/toggle'") ||
-				(contents.includes('BrnToggleGroupModule') && contents.includes('@spartan-ng/brain/toggle')) ||
-				contents.includes("HlmToggleGroupModule } from '@spartan-ng/ui-toggle-helm'") ||
-				(contents.includes('HlmToggleGroupModule') && contents.includes('@spartan-ng/ui-toggle-helm'))
+				contents.includes("BrnToggleGroupModule } from 'grg-ui-ui/brain/toggle'") ||
+				contents.includes("import { BrnToggleGroupModule } from 'grg-ui-ui/brain/toggle'") ||
+				(contents.includes('BrnToggleGroupModule') && contents.includes('grg-ui-ui/brain/toggle')) ||
+				contents.includes("HlmToggleGroupModule } from 'grg-ui-ui/ui-toggle-helm'") ||
+				(contents.includes('HlmToggleGroupModule') && contents.includes('grg-ui-ui/ui-toggle-helm'))
 			) {
 				failure(
 					'The <brn-toggle-group> component from the toggle brain package is deprecated. Please use the <brn-toggle-group> from the toggle-group package instead.',

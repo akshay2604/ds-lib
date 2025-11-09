@@ -40,7 +40,7 @@ describe('migrate-scroll-area generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { HlmScrollAreaModule } from '@spartan-ng/hlm-scroll-area';
+			import { HlmScrollAreaModule } from 'grg-ui-ui/hlm-scroll-area';
 
 			@NgModule({
 				imports: [BrowserModule, HlmScrollAreaModule],
@@ -63,7 +63,7 @@ describe('migrate-scroll-area generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { HlmScrollAreaComponent } from '@spartan-ng/hlm-scroll-area';
+			import { HlmScrollAreaComponent } from 'grg-ui-ui/hlm-scroll-area';
 
 			@NgModule({
 				imports: [BrowserModule, HlmScrollAreaComponent],
@@ -85,7 +85,7 @@ describe('migrate-scroll-area generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { HlmScrollAreaModule } from '@spartan-ng/hlm-scroll-area';
+			import { HlmScrollAreaModule } from 'grg-ui-ui/hlm-scroll-area';
 
 			@Component({
 				imports: [HlmScrollAreaModule],
@@ -113,7 +113,7 @@ describe('migrate-scroll-area generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { HlmScrollAreaComponent } from '@spartan-ng/hlm-scroll-area';
+			import { HlmScrollAreaComponent } from 'grg-ui-ui/hlm-scroll-area';
 
 			@Component({
 				imports: [HlmScrollAreaComponent],
@@ -130,7 +130,7 @@ describe('migrate-scroll-area generator', () => {
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
 		expect(content).toContain(`import { NgScrollbarModule } from 'ngx-scrollbar';`);
-		expect(content).toContain(`import { HlmScrollAreaDirective } from '@spartan-ng/hlm-scroll-area';`);
+		expect(content).toContain(`import { HlmScrollAreaDirective } from 'grg-ui-ui/hlm-scroll-area';`);
 		expect(content).toContain(`imports: [NgScrollbarModule, HlmScrollAreaDirective],`);
 		expect(content).toContain(
 			`<ng-scrollbar hlm class="w-48 border h-72 rounded-md border-border">Content</ng-scrollbar>`,

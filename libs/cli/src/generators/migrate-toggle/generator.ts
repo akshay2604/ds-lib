@@ -25,7 +25,7 @@ function replaceSelector(tree: Tree) {
 			return;
 		}
 
-		if (content.includes('brnToggle') || content.includes('@spartan-ng/helm/toggle')) {
+		if (content.includes('brnToggle') || content.includes('grg-ui-ui/helm/toggle')) {
 			// <button brnToggle hlm but between
 			content = replaceBrnToggle(content);
 
@@ -80,10 +80,10 @@ function updateImports(tree: Tree) {
 			return;
 		}
 
-		if (content.includes("'@spartan-ng/brain/toggle';") || content.includes("'@spartan-ng/helm/toggle';")) {
+		if (content.includes("'grg-ui-ui/brain/toggle';") || content.includes("'grg-ui-ui/helm/toggle';")) {
 			const updatedContent = content
-				// Handle `import { BrnToggle } from '@spartan-ng/brain/toggle';`
-				.replace("import { BrnToggle } from '@spartan-ng/brain/toggle';", '')
+				// Handle `import { BrnToggle } from 'grg-ui-ui/brain/toggle';`
+				.replace("import { BrnToggle } from 'grg-ui-ui/brain/toggle';", '')
 				// Remove `BrnToggle` with optional comma and whitespace
 				.replace(/BrnToggle,?\s?/, '');
 

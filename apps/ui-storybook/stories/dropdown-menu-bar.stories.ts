@@ -1,8 +1,8 @@
 import { NgIcon } from '@ng-icons/core';
-import { BrnMenuTrigger } from '@spartan-ng/brain/menu';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmMenu, HlmMenuImports } from '@spartan-ng/helm/menu';
+import { BrnMenuTrigger } from 'grg-ui-ui/brain/menu';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmMenu, HlmMenuImports } from 'grg-ui-ui/helm/menu';
 import { argsToTemplate, type Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 
 const meta: Meta<HlmMenu> = {

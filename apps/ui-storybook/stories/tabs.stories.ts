@@ -1,9 +1,9 @@
-import { BrnTabs, BrnTabsImports } from '@spartan-ng/brain/tabs';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmCardImports } from '@spartan-ng/helm/card';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmTabsImports } from '@spartan-ng/helm/tabs';
+import { BrnTabs, BrnTabsImports } from 'grg-ui-ui/brain/tabs';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmCardImports } from 'grg-ui-ui/helm/card';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmTabsImports } from 'grg-ui-ui/helm/tabs';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<BrnTabs & { disabled: boolean }> = {

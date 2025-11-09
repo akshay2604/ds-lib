@@ -1,6 +1,6 @@
 import type { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, Directive, ElementRef, inject, input } from '@angular/core';
-import { BrnDialog } from '@spartan-ng/brain/dialog';
+import { BrnDialog } from 'grg-ui-ui/brain/dialog';
 
 @Directive({
 	selector: '[hlmAutocompleteTrigger]',

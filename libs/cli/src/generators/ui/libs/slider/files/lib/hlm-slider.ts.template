@@ -6,7 +6,7 @@ import {
 	BrnSliderTick,
 	BrnSliderTrack,
 	injectBrnSlider,
-} from '@spartan-ng/brain/slider';
+} from 'grg-ui-ui/brain/slider';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

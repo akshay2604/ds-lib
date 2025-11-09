@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnResizablePanel } from '@spartan-ng/brain/resizable';
+import { BrnResizablePanel } from 'grg-ui-ui/brain/resizable';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmLabel } from '@spartan-ng/helm/label';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmInput> = {

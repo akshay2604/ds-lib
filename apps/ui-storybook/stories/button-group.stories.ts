@@ -1,9 +1,9 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideSlash } from '@ng-icons/lucide';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmButtonGroup, HlmButtonGroupImports } from '@spartan-ng/helm/button-group';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmButtonGroup, HlmButtonGroupImports } from 'grg-ui-ui/helm/button-group';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 import type { Meta } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

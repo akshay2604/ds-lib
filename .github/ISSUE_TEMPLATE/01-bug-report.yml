@@ -1,12 +1,12 @@
 name: Bug Report
-description: Report a bug inside spartan
+description: Report a bug inside grg-ui
 labels: [bug]
 
 body:
   - type: markdown
     attributes:
       value: |
-        Please search GitHub for a similar [issue](https://github.com/goetzrobin/spartan/issues) or [PR](https://github.com/goetzrobin/spartan/issues) before submitting a new issue.
+        Please search GitHub for a similar [issue](https://github.com/goetzrobin/grg-ui/issues) or [PR](https://github.com/goetzrobin/grg-ui/issues) before submitting a new issue.
 
   - type: textarea
     id: environment

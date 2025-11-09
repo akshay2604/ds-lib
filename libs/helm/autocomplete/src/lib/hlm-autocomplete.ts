@@ -19,20 +19,20 @@ import {
 import { type ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { provideIcons } from '@ng-icons/core';
 import { lucideChevronDown, lucideCircleX, lucideSearch } from '@ng-icons/lucide';
-import { BrnAutocomplete, BrnAutocompleteEmpty, BrnAutocompleteImports } from '@spartan-ng/brain/autocomplete';
-import { debouncedSignal } from '@spartan-ng/brain/core';
-import type { ChangeFn, TouchFn } from '@spartan-ng/brain/forms';
-import { BrnPopoverImports } from '@spartan-ng/brain/popover';
-import { HlmIconImports } from '@spartan-ng/helm/icon';
-import { HlmPopoverImports } from '@spartan-ng/helm/popover';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnAutocomplete, BrnAutocompleteEmpty, BrnAutocompleteImports } from 'grg-ui-ui/brain/autocomplete';
+import { debouncedSignal } from 'grg-ui-ui/brain/core';
+import type { ChangeFn, TouchFn } from 'grg-ui-ui/brain/forms';
+import { BrnPopoverImports } from 'grg-ui-ui/brain/popover';
+import { HlmIconImports } from 'grg-ui-ui/helm/icon';
+import { HlmPopoverImports } from 'grg-ui-ui/helm/popover';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 import { HlmAutocompleteEmpty } from './hlm-autocomplete-empty';
 import { HlmAutocompleteGroup } from './hlm-autocomplete-group';
 import { HlmAutocompleteItem } from './hlm-autocomplete-item';
 import { HlmAutocompleteList } from './hlm-autocomplete-list';
 
-import { HlmInputGroupImports } from '@spartan-ng/helm/input-group';
+import { HlmInputGroupImports } from 'grg-ui-ui/helm/input-group';
 import { HlmAutocompleteTrigger } from './hlm-autocomplete-trigger';
 import { injectHlmAutocompleteConfig } from './hlm-autocomplete.token';
 

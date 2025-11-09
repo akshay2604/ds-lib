@@ -1,6 +1,6 @@
-import { BrnProgress, BrnProgressImports } from '@spartan-ng/brain/progress';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmProgressImports } from '@spartan-ng/helm/progress';
+import { BrnProgress, BrnProgressImports } from 'grg-ui-ui/brain/progress';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmProgressImports } from 'grg-ui-ui/helm/progress';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<BrnProgress> = {

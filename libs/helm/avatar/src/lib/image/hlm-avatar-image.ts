@@ -1,6 +1,6 @@
 import { Directive, computed, inject, input } from '@angular/core';
-import { BrnAvatarImage } from '@spartan-ng/brain/avatar';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnAvatarImage } from 'grg-ui-ui/brain/avatar';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

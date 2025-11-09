@@ -71,10 +71,10 @@ function updateImports(tree: Tree) {
 	visitFiles(tree, '/', (path) => {
 		const content = tree.read(path).toString('utf-8');
 
-		if (content.includes('@spartan-ng/brain/radio-group') || content.includes('@spartan-ng/ui-radiogroup-helm')) {
+		if (content.includes('grg-ui-ui/brain/radio-group') || content.includes('grg-ui-ui/ui-radiogroup-helm')) {
 			const updatedContent = content
-				// Handle `import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';`
-				.replace("import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';", '')
+				// Handle `import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';`
+				.replace("import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';", '')
 				// Remove `BrnRadioComponent` with optional comma and whitespace
 				.replace(/BrnRadioComponent,?\s?/, '')
 				// Replace all `HlmRadioDirective` with `HlmRadioComponent`

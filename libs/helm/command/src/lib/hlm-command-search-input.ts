@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnCommandSearchInput } from '@spartan-ng/brain/command';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnCommandSearchInput } from 'grg-ui-ui/brain/command';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

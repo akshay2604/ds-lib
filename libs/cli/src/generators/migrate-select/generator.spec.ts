@@ -72,9 +72,9 @@ describe('migrate-select generator', () => {
 			`import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 			import { NgIcon, provideIcons } from '@ng-icons/core';
 			import { lucideCheck } from '@ng-icons/lucide';
-			import { hlm } from '@spartan-ng/brain/core';
-			import { BrnSelectOptionDirective } from '@spartan-ng/brain/select';
-			import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
+			import { hlm } from 'grg-ui-ui/brain/core';
+			import { BrnSelectOptionDirective } from 'grg-ui-ui/brain/select';
+			import { HlmIconDirective } from 'grg-ui-ui/ui-icon-helm';
 			import type { ClassValue } from 'clsx';
 
 			@Component({

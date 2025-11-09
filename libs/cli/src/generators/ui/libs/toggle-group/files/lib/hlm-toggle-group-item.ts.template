@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';
+import { BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';
 import { ToggleVariants, toggleVariants } from '<%- importAlias %>/toggle';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';

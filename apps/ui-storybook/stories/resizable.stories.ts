@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HlmResizableImports } from '@spartan-ng/helm/resizable';
+import { HlmResizableImports } from 'grg-ui-ui/helm/resizable';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

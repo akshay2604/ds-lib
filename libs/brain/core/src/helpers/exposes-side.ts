@@ -10,4 +10,4 @@ export const [
 	provideExposedSideProvider,
 	provideExposedSideProviderExisting,
 	EXPOSES_SIDE_TOKEN,
-] = createInjectionToken<ExposesSide>('@spartan-ng EXPOSES_SIDE_TOKEN');
+] = createInjectionToken<ExposesSide>('grg-ui-ui EXPOSES_SIDE_TOKEN');

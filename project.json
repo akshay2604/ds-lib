@@ -1,5 +1,5 @@
 {
-	"name": "spartan",
+	"name": "grg-ui",
 	"$schema": "node_modules/nx/schemas/project-schema.json",
 	"targets": {
 		"local-registry": {
@@ -10,7 +10,7 @@
 			}
 		},
 		"ui-api-definition": {
-			"executor": "@spartan-ng/tools:generate-ui-docs",
+			"executor": "grg-ui-ui/tools:generate-ui-docs",
 			"options": {
 				"outputDir": "apps/app/src/public/data",
 				"outputFile": "ui-api.json",

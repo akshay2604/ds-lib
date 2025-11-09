@@ -11,10 +11,10 @@ import {
 } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideX } from '@ng-icons/lucide';
-import { injectExposedSideProvider, injectExposesStateProvider } from '@spartan-ng/brain/core';
-import { BrnSheetClose } from '@spartan-ng/brain/sheet';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { hlm } from '@spartan-ng/helm/utils';
+import { injectExposedSideProvider, injectExposesStateProvider } from 'grg-ui-ui/brain/core';
+import { BrnSheetClose } from 'grg-ui-ui/brain/sheet';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 import { HlmSheetClose } from './hlm-sheet-close';

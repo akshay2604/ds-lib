@@ -1,7 +1,7 @@
 import { booleanAttribute, computed, Directive, inject, input } from '@angular/core';
-import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from '@spartan-ng/brain/tooltip';
-import { DEFAULT_TOOLTIP_CONTENT_CLASSES } from '@spartan-ng/helm/tooltip';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from 'grg-ui-ui/brain/tooltip';
+import { DEFAULT_TOOLTIP_CONTENT_CLASSES } from 'grg-ui-ui/helm/tooltip';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { cva } from 'class-variance-authority';
 
 import { HlmSidebarService } from './hlm-sidebar.service';

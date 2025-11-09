@@ -19,7 +19,7 @@ import {
 	TemplateRef,
 	ViewContainerRef,
 } from '@angular/core';
-import { createHoverObservable, waitForElementAnimations } from '@spartan-ng/brain/core';
+import { createHoverObservable, waitForElementAnimations } from 'grg-ui-ui/brain/core';
 import { BehaviorSubject, fromEvent, Observable, of, Subject } from 'rxjs';
 import { map, share, switchMap, takeUntil } from 'rxjs/operators';
 

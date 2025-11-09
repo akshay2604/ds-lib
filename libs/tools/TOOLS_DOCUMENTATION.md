@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **@spartan-ng/tools** is an internal development toolkit for the Spartan UI library ecosystem. It provides generators and executors for automating development workflows, managing releases, generating documentation, and maintaining the codebase structure.
+The **grg-ui-ui/tools** is an internal development toolkit for the Spartan UI library ecosystem. It provides generators and executors for automating development workflows, managing releases, generating documentation, and maintaining the codebase structure.
 
 ## Table of Contents
 
@@ -64,7 +64,7 @@ Build and automation tools that perform complex operations:
 Generates new Helm UI components with proper structure and exports.
 
 ```bash
-nx g @spartan-ng/tools:helm-component --componentName=button --entrypoint=button
+nx g grg-ui-ui/tools:helm-component --componentName=button --entrypoint=button
 ```
 
 **Features:**
@@ -85,7 +85,7 @@ libs/helm/{entrypoint}/src/lib/
 Generates new Helm directives for styling and behavior.
 
 ```bash
-nx g @spartan-ng/tools:helm-directive --directiveName=button --entrypoint=button
+nx g grg-ui-ui/tools:helm-directive --directiveName=button --entrypoint=button
 ```
 
 **Features:**
@@ -98,7 +98,7 @@ nx g @spartan-ng/tools:helm-directive --directiveName=button --entrypoint=button
 Creates new secondary entrypoints in the Helm library with complete scaffolding.
 
 ```bash
-nx g @spartan-ng/tools:helm-secondary-entrypoint --name=accordion --generate=component --story=true --documentation=true
+nx g grg-ui-ui/tools:helm-secondary-entrypoint --name=accordion --generate=component --story=true --documentation=true
 ```
 
 **Features:**
@@ -120,7 +120,7 @@ nx g @spartan-ng/tools:helm-secondary-entrypoint --name=accordion --generate=com
 Generates Storybook stories for Helm components.
 
 ```bash
-nx g @spartan-ng/tools:helm-story --entrypoint=button --componentName=HlmButton
+nx g grg-ui-ui/tools:helm-story --entrypoint=button --componentName=HlmButton
 ```
 
 **Generated Story Structure:**
@@ -142,7 +142,7 @@ export const Default: Story = {
 Creates documentation pages for Helm components.
 
 ```bash
-nx g @spartan-ng/tools:helm-documentation --name=button --description="Interactive button component"
+nx g grg-ui-ui/tools:helm-documentation --name=button --description="Interactive button component"
 ```
 
 **Features:**
@@ -155,7 +155,7 @@ nx g @spartan-ng/tools:helm-documentation --name=button --description="Interacti
 Extracts code snippets from component examples for documentation.
 
 ```bash
-nx g @spartan-ng/tools:generate-primitive-snippets
+nx g grg-ui-ui/tools:generate-primitive-snippets
 ```
 
 **Features:**
@@ -171,7 +171,7 @@ nx g @spartan-ng/tools:generate-primitive-snippets
 Converts Helm library entrypoints to CLI generators automatically.
 
 ```bash
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 ```
 
 **Process:**
@@ -193,21 +193,21 @@ nx g @spartan-ng/tools:hlm-to-cli-generator
 Automatically increments version numbers for nightly releases.
 
 ```bash
-nx g @spartan-ng/tools:auto-increment-version
+nx g grg-ui-ui/tools:auto-increment-version
 ```
 
 ##### `replace-ui-version`
 Updates version numbers across all UI libraries and CLI references.
 
 ```bash
-nx g @spartan-ng/tools:replace-ui-version
+nx g grg-ui-ui/tools:replace-ui-version
 ```
 
 ##### `replace-cli-version`
 Updates the CLI package version.
 
 ```bash
-nx g @spartan-ng/tools:replace-cli-version
+nx g grg-ui-ui/tools:replace-cli-version
 ```
 
 ## Executors
@@ -305,12 +305,12 @@ nx run tools:build-update-publish
 
 1. **Create Secondary Entrypoint:**
    ```bash
-   nx g @spartan-ng/tools:helm-secondary-entrypoint --name=new-component --generate=component --story=true --documentation=true
+   nx g grg-ui-ui/tools:helm-secondary-entrypoint --name=new-component --generate=component --story=true --documentation=true
    ```
 
 2. **Generate CLI Integration:**
    ```bash
-   nx g @spartan-ng/tools:hlm-to-cli-generator
+   nx g grg-ui-ui/tools:hlm-to-cli-generator
    ```
 
 3. **Update Documentation:**
@@ -323,16 +323,16 @@ nx run tools:build-update-publish
 1. **Update Versions:**
    ```bash
    # For nightly releases
-   nx g @spartan-ng/tools:auto-increment-version
+   nx g grg-ui-ui/tools:auto-increment-version
    
    # For manual releases
-   nx g @spartan-ng/tools:replace-ui-version
-   nx g @spartan-ng/tools:replace-cli-version
+   nx g grg-ui-ui/tools:replace-ui-version
+   nx g grg-ui-ui/tools:replace-cli-version
    ```
 
 2. **Generate CLI Generators:**
    ```bash
-   nx g @spartan-ng/tools:hlm-to-cli-generator
+   nx g grg-ui-ui/tools:hlm-to-cli-generator
    ```
 
 3. **Build and Publish:**
@@ -345,7 +345,7 @@ nx run tools:build-update-publish
 
 1. **Generate Code Snippets:**
    ```bash
-   nx g @spartan-ng/tools:generate-primitive-snippets
+   nx g grg-ui-ui/tools:generate-primitive-snippets
    ```
 
 2. **Update API Documentation:**
@@ -364,7 +364,7 @@ nx run tools:build-update-publish
 
 ```bash
 # 1. Create the secondary entrypoint with component and story
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=button-variant \
   --generate=component \
   --story=true \
@@ -372,7 +372,7 @@ nx g @spartan-ng/tools:helm-secondary-entrypoint \
   --description="A specialized button variant component"
 
 # 2. Update CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # 3. Generate documentation
 nx run tools:generate-ui-docs
@@ -382,24 +382,24 @@ nx run tools:generate-ui-docs
 
 ```bash
 # 1. Create secondary entrypoint with directive
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=highlight \
   --generate=directive \
   --story=true
 
 # 2. Update CLI integration
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 ```
 
 ### Preparing a Release
 
 ```bash
 # 1. Update all versions
-nx g @spartan-ng/tools:replace-ui-version
-nx g @spartan-ng/tools:replace-cli-version
+nx g grg-ui-ui/tools:replace-ui-version
+nx g grg-ui-ui/tools:replace-cli-version
 
 # 2. Update CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # 3. Format and lint
 pnpm run format
@@ -548,7 +548,7 @@ Error: No components found in directory
 
 Enable verbose logging for generators:
 ```bash
-nx g @spartan-ng/tools:helm-component --componentName=test --entrypoint=test --verbose
+nx g grg-ui-ui/tools:helm-component --componentName=test --entrypoint=test --verbose
 ```
 
 Enable debug output for executors:
@@ -626,6 +626,6 @@ MIT License - see the [LICENSE](../../LICENSE) file for details.
 
 ## Support
 
-- [GitHub Issues](https://github.com/goetzrobin/spartan/issues)
+- [GitHub Issues](https://github.com/goetzrobin/grg-ui/issues)
 - [Discord Community](https://discord.gg/EqHnxQ4uQr)
-- [Documentation](https://spartan.ng)
+- [Documentation](https://grg-ui.ng)

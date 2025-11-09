@@ -1,4 +1,4 @@
-import { HlmKbd, HlmKbdImports } from '@spartan-ng/helm/kbd';
+import { HlmKbd, HlmKbdImports } from 'grg-ui-ui/helm/kbd';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

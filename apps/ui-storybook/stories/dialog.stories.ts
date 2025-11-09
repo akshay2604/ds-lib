@@ -7,8 +7,8 @@ import {
 	BrnDialogRef,
 	BrnDialogTrigger,
 	injectBrnDialogContext,
-} from '@spartan-ng/brain/dialog';
-import { HlmButton } from '@spartan-ng/helm/button';
+} from 'grg-ui-ui/brain/dialog';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 import {
 	HlmDialog,
 	HlmDialogContent,
@@ -17,11 +17,11 @@ import {
 	HlmDialogImports,
 	HlmDialogService,
 	HlmDialogTitle,
-} from '@spartan-ng/helm/dialog';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmTableImports } from '@spartan-ng/helm/table';
+} from 'grg-ui-ui/helm/dialog';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmTableImports } from 'grg-ui-ui/helm/table';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmDialog> = {

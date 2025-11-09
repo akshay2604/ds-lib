@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { type ComponentFixture, TestBed } from '@angular/core/testing';
-import { BrnAvatarFallback } from '@spartan-ng/brain/avatar';
+import { BrnAvatarFallback } from 'grg-ui-ui/brain/avatar';
 import { HlmAvatar } from './hlm-avatar';
 
 @Component({

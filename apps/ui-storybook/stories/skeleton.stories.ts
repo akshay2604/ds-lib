@@ -1,4 +1,4 @@
-import { HlmSkeleton } from '@spartan-ng/helm/skeleton';
+import { HlmSkeleton } from 'grg-ui-ui/helm/skeleton';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

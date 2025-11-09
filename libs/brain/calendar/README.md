@@ -1,3 +1,3 @@
-# @spartan-ng/brain/calendar
+# grg-ui-ui/brain/calendar
 
-Secondary entry point of `@spartan-ng/brain`. It can be used by importing from `@spartan-ng/brain/calendar`.
+Secondary entry point of `grg-ui-ui/brain`. It can be used by importing from `grg-ui-ui/brain/calendar`.

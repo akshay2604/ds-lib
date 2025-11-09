@@ -1,4 +1,4 @@
-import { HlmBadge } from '@spartan-ng/helm/badge';
+import { HlmBadge } from 'grg-ui-ui/helm/badge';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmBadge> = {

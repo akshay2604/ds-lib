@@ -24,7 +24,7 @@ const renamedIdentifiers: Record<string, string> = {
 };
 
 /**
- * Detect any imports from `@spartan-ng/brain/*` that need to be updated.
+ * Detect any imports from `grg-ui-ui/brain/*` that need to be updated.
  * Get the identifiers that need to be replaced, and then replace them.
  */
 function updateBrainIdentifiers(tree: Tree) {
@@ -46,7 +46,7 @@ function updateBrainIdentifiers(tree: Tree) {
 		for (const importDeclaration of importDeclarations) {
 			const moduleSpecifier = importDeclaration.moduleSpecifier.getText();
 
-			if (moduleSpecifier.includes('@spartan-ng/brain/')) {
+			if (moduleSpecifier.includes('grg-ui-ui/brain/')) {
 				const identifiers = tsquery.query(importDeclaration, 'Identifier');
 
 				// we only care about identifiers that end in 'Directive', 'Component'

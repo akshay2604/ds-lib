@@ -11,8 +11,8 @@ import {
 } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideX } from '@ng-icons/lucide';
-import { injectExposedSideProvider, injectExposesStateProvider } from '@spartan-ng/brain/core';
-import { BrnSheetClose } from '@spartan-ng/brain/sheet';
+import { injectExposedSideProvider, injectExposesStateProvider } from 'grg-ui-ui/brain/core';
+import { BrnSheetClose } from 'grg-ui-ui/brain/sheet';
 import { HlmIcon } from '<%- importAlias %>/icon';
 import { hlm } from '<%- importAlias %>/utils';
 import { cva } from 'class-variance-authority';

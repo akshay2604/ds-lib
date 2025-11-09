@@ -1,3 +1,3 @@
-# @spartan-ng/helm/toggle-group
+# grg-ui-ui/helm/toggle-group
 
-Secondary entry point of `@spartan-ng/helm`. It can be used by importing from `@spartan-ng/helm/toggle-group`.
+Secondary entry point of `grg-ui-ui/helm`. It can be used by importing from `grg-ui-ui/helm/toggle-group`.

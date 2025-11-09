@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, contentChild, inject, input } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideChevronDown } from '@ng-icons/lucide';
-import { BrnSelect, BrnSelectTrigger } from '@spartan-ng/brain/select';
+import { BrnSelect, BrnSelectTrigger } from 'grg-ui-ui/brain/select';
 import { HlmIcon } from '<%- importAlias %>/icon';
 import { hlm } from '<%- importAlias %>/utils';
 import { cva } from 'class-variance-authority';

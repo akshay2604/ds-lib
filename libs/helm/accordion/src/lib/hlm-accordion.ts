@@ -1,6 +1,6 @@
 import { Directive, computed, inject, input } from '@angular/core';
-import { BrnAccordion } from '@spartan-ng/brain/accordion';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnAccordion } from 'grg-ui-ui/brain/accordion';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

@@ -14,7 +14,7 @@ import {
 	signal,
 } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { computedPrevious, createHoverObservable } from '@spartan-ng/brain/core';
+import { computedPrevious, createHoverObservable } from 'grg-ui-ui/brain/core';
 import { combineLatest, merge, of, Subject } from 'rxjs';
 import { debounceTime, filter, map, pairwise, startWith, switchMap, takeUntil } from 'rxjs/operators';
 import { BrnNavigationMenuItem } from './brn-navigation-menu-item';

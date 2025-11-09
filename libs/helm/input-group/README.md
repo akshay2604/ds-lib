@@ -1,3 +1,3 @@
-# @spartan-ng/helm/input-group
+# grg-ui-ui/helm/input-group
 
-Secondary entry point of `@spartan-ng/helm`. It can be used by importing from `@spartan-ng/helm/input-group`.
+Secondary entry point of `grg-ui-ui/helm`. It can be used by importing from `grg-ui-ui/helm/input-group`.

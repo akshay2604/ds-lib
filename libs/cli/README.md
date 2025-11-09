@@ -1,4 +1,4 @@
-# @spartan-ng/cli
+# grg-ui-ui/cli
 
 A powerful Nx plugin and Angular CLI schematic collection for the Spartan UI library. Generate beautiful, accessible UI components with ease.
 
@@ -6,16 +6,16 @@ A powerful Nx plugin and Angular CLI schematic collection for the Spartan UI lib
 
 ```bash
 # Install
-npm install @spartan-ng/cli
+npm install grg-ui-ui/cli
 
 # Generate UI components
-nx g @spartan-ng/cli:ui
+nx g grg-ui-ui/cli:ui
 
 # Add themes
-nx g @spartan-ng/cli:ui-theme
+nx g grg-ui-ui/cli:ui-theme
 
 # Run health check
-nx g @spartan-ng/cli:healthcheck
+nx g grg-ui-ui/cli:healthcheck
 ```
 
 ## Features

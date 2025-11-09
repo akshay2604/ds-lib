@@ -1,7 +1,7 @@
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideCircleAlert, lucideInfo } from '@ng-icons/lucide';
-import { HlmAlert, HlmAlertImports } from '@spartan-ng/helm/alert';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+import { HlmAlert, HlmAlertImports } from 'grg-ui-ui/helm/alert';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { argsToTemplate, moduleMetadata } from '@storybook/angular';
 
@@ -28,7 +28,7 @@ const meta: Meta<HlmAlert> = {
 		template: `
      <div class='max-w-xl' hlmAlert ${argsToTemplate(args)}>
       <ng-icon hlm name='lucideInfo' hlmAlertIcon />
-      <h4 hlmAlertTitle>Introducing SPARTAN helm & brain</h4>
+      <h4 hlmAlertTitle>Introducing GRG-UI helm & brain</h4>
       <p hlmAlertDescription>
         The components used on this page are also the intial building blocks of a new UI library. It is made up of
         headless UI providers, the brain components/directives, which add ARIA compliant markup and interactions. On top

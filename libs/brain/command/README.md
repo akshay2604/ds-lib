@@ -1,3 +1,3 @@
-# @spartan-ng/brain/command
+# grg-ui-ui/brain/command
 
-Secondary entry point of `@spartan-ng/brain`. It can be used by importing from `@spartan-ng/brain/command`.
+Secondary entry point of `grg-ui-ui/brain`. It can be used by importing from `grg-ui-ui/brain/command`.

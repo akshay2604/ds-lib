@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrnRadioGroup } from '@spartan-ng/brain/radio-group';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmRadioGroupImports } from '@spartan-ng/helm/radio-group';
-import { HlmCode, HlmSmall } from '@spartan-ng/helm/typography';
+import { BrnRadioGroup } from 'grg-ui-ui/brain/radio-group';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmRadioGroupImports } from 'grg-ui-ui/helm/radio-group';
+import { HlmCode, HlmSmall } from 'grg-ui-ui/helm/typography';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 @Component({

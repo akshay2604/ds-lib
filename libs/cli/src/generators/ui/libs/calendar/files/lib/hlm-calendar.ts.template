@@ -12,9 +12,9 @@ import {
 } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideChevronLeft, lucideChevronRight } from '@ng-icons/lucide';
-import { BrnCalendar, BrnCalendarImports, injectBrnCalendarI18n, type Weekday } from '@spartan-ng/brain/calendar';
-import { injectDateAdapter } from '@spartan-ng/brain/date-time';
-import { BrnSelectImports } from '@spartan-ng/brain/select';
+import { BrnCalendar, BrnCalendarImports, injectBrnCalendarI18n, type Weekday } from 'grg-ui-ui/brain/calendar';
+import { injectDateAdapter } from 'grg-ui-ui/brain/date-time';
+import { BrnSelectImports } from 'grg-ui-ui/brain/select';
 import { buttonVariants } from '<%- importAlias %>/button';
 import { HlmIcon } from '<%- importAlias %>/icon';
 import { HlmSelectImports } from '<%- importAlias %>/select';

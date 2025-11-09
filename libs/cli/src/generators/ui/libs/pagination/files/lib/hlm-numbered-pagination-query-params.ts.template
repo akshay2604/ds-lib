@@ -10,7 +10,7 @@ import {
 	untracked,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrnSelectImports } from '@spartan-ng/brain/select';
+import { BrnSelectImports } from 'grg-ui-ui/brain/select';
 import { HlmSelectImports } from '<%- importAlias %>/select';
 import { createPageArray, outOfBoundCorrection } from './hlm-numbered-pagination';
 import { HlmPagination } from './hlm-pagination';

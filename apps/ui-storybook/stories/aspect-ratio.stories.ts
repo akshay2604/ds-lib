@@ -1,4 +1,4 @@
-import { HlmAspectRatio } from '@spartan-ng/helm/aspect-ratio';
+import { HlmAspectRatio } from 'grg-ui-ui/helm/aspect-ratio';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

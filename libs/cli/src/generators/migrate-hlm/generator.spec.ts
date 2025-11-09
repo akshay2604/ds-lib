@@ -49,7 +49,7 @@ describe('migrate-hlm', () => {
 			tree.write(
 				'app/src/app/button.ts',
 				`
-        import { hlm } from '@spartan-ng/brain/core';
+        import { hlm } from 'grg-ui-ui/brain/core';
       `,
 			);
 
@@ -57,15 +57,15 @@ describe('migrate-hlm', () => {
 
 			const content = tree.read('app/src/app/button.ts', 'utf-8');
 
-			expect(content).toContain(`import { hlm } from '@spartan-ng/helm/utils';`);
-			expect(content).not.toContain(`import { hlm } from '@spartan-ng/brain/core';`);
+			expect(content).toContain(`import { hlm } from 'grg-ui-ui/helm/utils';`);
+			expect(content).not.toContain(`import { hlm } from 'grg-ui-ui/brain/core';`);
 		});
 
 		it('should remove hlm but keep other imports', async () => {
 			tree.write(
 				'app/src/app/button.ts',
 				`
-        import { hlm, somethingElse } from '@spartan-ng/brain/core';
+        import { hlm, somethingElse } from 'grg-ui-ui/brain/core';
       `,
 			);
 
@@ -73,15 +73,15 @@ describe('migrate-hlm', () => {
 
 			const content = tree.read('app/src/app/button.ts', 'utf-8');
 
-			expect(content).toContain(`import { somethingElse } from '@spartan-ng/brain/core';`);
-			expect(content).toContain(`import { hlm } from '@spartan-ng/helm/utils';`);
+			expect(content).toContain(`import { somethingElse } from 'grg-ui-ui/brain/core';`);
+			expect(content).toContain(`import { hlm } from 'grg-ui-ui/helm/utils';`);
 		});
 
 		it('should keep import if hlm is not present', async () => {
 			tree.write(
 				'app/src/app/button.ts',
 				`
-        import { somethingElse } from '@spartan-ng/brain/core';
+        import { somethingElse } from 'grg-ui-ui/brain/core';
       `,
 			);
 
@@ -89,15 +89,15 @@ describe('migrate-hlm', () => {
 
 			const content = tree.read('app/src/app/button.ts', 'utf-8');
 
-			expect(content).toContain(`import { somethingElse } from '@spartan-ng/brain/core';`);
-			expect(content).not.toContain(`import { hlm } from '@spartan-ng/helm/utils';`);
+			expect(content).toContain(`import { somethingElse } from 'grg-ui-ui/brain/core';`);
+			expect(content).not.toContain(`import { hlm } from 'grg-ui-ui/helm/utils';`);
 		});
 
 		it('should handle hlm in the middle of imports', async () => {
 			tree.write(
 				'app/src/app/button.ts',
 				`
-        import { one, hlm, two } from '@spartan-ng/brain/core';
+        import { one, hlm, two } from 'grg-ui-ui/brain/core';
       `,
 			);
 
@@ -105,17 +105,17 @@ describe('migrate-hlm', () => {
 
 			const content = tree.read('app/src/app/button.ts', 'utf-8');
 
-			expect(content).toContain(`import { one, two } from '@spartan-ng/brain/core';`);
-			expect(content).toContain(`import { hlm } from '@spartan-ng/helm/utils';`);
+			expect(content).toContain(`import { one, two } from 'grg-ui-ui/brain/core';`);
+			expect(content).toContain(`import { hlm } from 'grg-ui-ui/helm/utils';`);
 		});
 
 		it('should handle multiple import statements', async () => {
 			tree.write(
 				'app/src/app/button.ts',
 				`
-        import { hlm } from '@spartan-ng/brain/core';
+        import { hlm } from 'grg-ui-ui/brain/core';
         import { foo } from './foo';
-        import { hlm, bar } from '@spartan-ng/brain/core';
+        import { hlm, bar } from 'grg-ui-ui/brain/core';
       `,
 			);
 
@@ -124,8 +124,8 @@ describe('migrate-hlm', () => {
 			const content = tree.read('app/src/app/button.ts', 'utf-8');
 
 			expect(content).toContain(`import { foo } from './foo';`);
-			expect(content).toContain(`import { bar } from '@spartan-ng/brain/core';`);
-			expect(content.match(/import { hlm } from '@spartan-ng\/helm\/utils';/g)).toHaveLength(2);
+			expect(content).toContain(`import { bar } from 'grg-ui-ui/brain/core';`);
+			expect(content.match(/import { hlm } from 'grg-ui-ui\/helm\/utils';/g)).toHaveLength(2);
 		});
 	});
 
@@ -143,7 +143,7 @@ describe('migrate-hlm', () => {
 				JSON.stringify({
 					compilerOptions: {
 						paths: {
-							'@spartan-ng/helm/utils': ['libs/helm-utils/src/index.ts'],
+							'grg-ui-ui/helm/utils': ['libs/helm-utils/src/index.ts'],
 						},
 					},
 				}),

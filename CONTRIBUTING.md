@@ -1,6 +1,6 @@
 # Contributing
 
-spartan is an MIT-licensed open source project with its ongoing development made by contributors.
+grg-ui is an MIT-licensed open source project with its ongoing development made by contributors.
 
 ## Contributing to the UI library
 
@@ -11,7 +11,7 @@ locate the relevant code in one of these sub-folders.
 
 ### Setup
 
-spartan uses [PNPM](https://pnpm.io) to manage its dependencies.
+grg-ui uses [PNPM](https://pnpm.io) to manage its dependencies.
 
 Before opening a pull request, run the following command from the root
 folder to make sure your development dependencies are up-to-date:
@@ -31,7 +31,7 @@ pnpm run storybook
 
 ### Build
 
-spartan uses [Nx](https://nx.dev) for builds. To build all projects locally, run the following command from the root
+grg-ui uses [Nx](https://nx.dev) for builds. To build all projects locally, run the following command from the root
 folder:
 
 ```shell
@@ -40,7 +40,7 @@ pnpm run build
 
 ### Testing
 
-spartan uses [Jest](https://jestjs.io) for tests. To test all projects locally, run the following command from the root
+grg-ui uses [Jest](https://jestjs.io) for tests. To test all projects locally, run the following command from the root
 folder:
 
 ```shell
@@ -53,7 +53,7 @@ We also have e2e tests set up with Cypress that run against our storybook. Run t
 pnpm run e2e
 ```
 
-## Contributing to the docs and spartan website
+## Contributing to the docs and grg-ui website
 
 To serve the documentation and example application locally, run the following command from the root folder:
 
@@ -69,7 +69,7 @@ Brain features should be added as a secondary entrypoint to the `brain` library.
 command:
 
 ```shell
-nx g @spartan-ng/tools:brain-secondary-entrypoint --name=feature-name
+nx g grg-ui-ui/tools:brain-secondary-entrypoint --name=feature-name
 ```
 
 ## Creating a new Helm feature
@@ -78,7 +78,7 @@ Helm features should be added as a secondary entrypoint to the `helm` library. T
 command:
 
 ```shell
-nx g @spartan-ng/tools:helm-secondary-entrypoint --name=feature-name
+nx g grg-ui-ui/tools:helm-secondary-entrypoint --name=feature-name
 ```
 
 ## Submitting pull requests
@@ -90,7 +90,7 @@ anyway.**
 - Run the `Setup` command to make sure your development dependencies are up-to-date.
 - Please ensure the test suite passes before submitting a PR.
 - If you've added new functionality, **please** include tests which validate its behavior.
-- Make reference to possible [issues](https://github.com/spartan-ng/spartan/issues) on PR comment.
+- Make reference to possible [issues](https://github.com/grg-ui/grg-ui/issues) on PR comment.
 
 ## Submitting bug reports
 
@@ -110,7 +110,7 @@ anyway.**
 
 Questions and requests for support should not be opened as issues and should be handled in the following ways:
 
-- Start a new [Q&A Discussion](https://github.com/spartan-ng/spartan/discussions/new?category=q-a) on GitHub.
+- Start a new [Q&A Discussion](https://github.com/grg-ui/grg-ui/discussions/new?category=q-a) on GitHub.
 
 ## Commit message guidelines
 
@@ -139,7 +139,7 @@ to read on GitHub as well as in various git tools.
 The footer should contain
 a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages/) if any.
 
-Samples: (even more [samples](https://github.com/spartan-ng/spartan/commits/main))
+Samples: (even more [samples](https://github.com/grg-ui/grg-ui/commits/main))
 
 ```
 docs(changelog): update changelog to beta.5

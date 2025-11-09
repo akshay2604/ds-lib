@@ -1,8 +1,8 @@
 import { NumberInput } from '@angular/cdk/coercion';
 import { Directive, computed, input, numberAttribute } from '@angular/core';
-import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';
-import { ToggleVariants } from '@spartan-ng/helm/toggle';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';
+import { ToggleVariants } from 'grg-ui-ui/helm/toggle';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 import { provideHlmToggleGroup } from './hlm-toggle-group.token';
 

@@ -1,8 +1,8 @@
-# @spartan-ng/helm Documentation
+# grg-ui-ui/helm Documentation
 
 ## Overview
 
-The `@spartan-ng/helm` library is a comprehensive Angular UI component library that provides beautifully styled, accessible, and customizable components built on top of `@spartan-ng/brain`. It serves as the styled layer of the Spartan design system, offering production-ready components with consistent design patterns and excellent developer experience.
+The `grg-ui-ui/helm` library is a comprehensive Angular UI component library that provides beautifully styled, accessible, and customizable components built on top of `grg-ui-ui/brain`. It serves as the styled layer of the Spartan design system, offering production-ready components with consistent design patterns and excellent developer experience.
 
 ## Architecture
 
@@ -69,7 +69,7 @@ libs/helm/
 
 ### Package Information
 
-- **Package Name**: `@spartan-ng/helm`
+- **Package Name**: `grg-ui-ui/helm`
 - **Version**: `0.0.1-alpha.461`
 - **Prefix**: `hlm`
 - **Project Type**: Angular Library
@@ -86,7 +86,7 @@ The helm library has the following peer dependencies:
   - `@angular/forms`
   - `@angular/router`
 - **Icons**: `@ng-icons/core` and `@ng-icons/lucide` `>=29.0.0`
-- **Foundation**: `@spartan-ng/brain` `0.0.1-alpha.542`
+- **Foundation**: `grg-ui-ui/brain` `0.0.1-alpha.542`
 - **Styling Utilities**:
   - `class-variance-authority` `^0.7.0`
   - `clsx` `^2.1.1`
@@ -129,7 +129,7 @@ npm install embla-carousel-angular ngx-sonner rxjs
 ### Install Helm
 
 ```bash
-npm install @spartan-ng/helm @spartan-ng/brain
+npm install grg-ui-ui/helm grg-ui-ui/brain
 ```
 
 ### Tailwind CSS Configuration
@@ -141,7 +141,7 @@ Add the helm library to your Tailwind CSS configuration:
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
-    "./node_modules/@spartan-ng/helm/**/*.{html,ts,js}",
+    "./node_modules/grg-ui-ui/helm/**/*.{html,ts,js}",
   ],
   // ... rest of your config
 };
@@ -155,8 +155,8 @@ Each helm component can be imported individually for optimal tree-shaking:
 
 ```typescript
 // Import specific component
-import { HlmButtonImports } from '@spartan-ng/helm/button';
-import { HlmCardImports } from '@spartan-ng/helm/card';
+import { HlmButtonImports } from 'grg-ui-ui/helm/button';
+import { HlmCardImports } from 'grg-ui-ui/helm/card';
 
 @Component({
   standalone: true,
@@ -182,9 +182,9 @@ export class MyComponent {}
 ### Form Components Example
 
 ```typescript
-import { HlmInputImports } from '@spartan-ng/helm/input';
-import { HlmLabelImports } from '@spartan-ng/helm/label';
-import { HlmButtonImports } from '@spartan-ng/helm/button';
+import { HlmInputImports } from 'grg-ui-ui/helm/input';
+import { HlmLabelImports } from 'grg-ui-ui/helm/label';
+import { HlmButtonImports } from 'grg-ui-ui/helm/button';
 
 @Component({
   standalone: true,
@@ -209,8 +209,8 @@ export class LoginForm {}
 ### Navigation Example
 
 ```typescript
-import { HlmNavigationMenuImports } from '@spartan-ng/helm/navigation-menu';
-import { HlmButtonImports } from '@spartan-ng/helm/button';
+import { HlmNavigationMenuImports } from 'grg-ui-ui/helm/navigation-menu';
+import { HlmButtonImports } from 'grg-ui-ui/helm/button';
 
 @Component({
   standalone: true,
@@ -392,10 +392,10 @@ Always import components individually to ensure optimal tree-shaking:
 
 ```typescript
 // ✅ Good - Tree-shakable
-import { HlmButtonImports } from '@spartan-ng/helm/button';
+import { HlmButtonImports } from 'grg-ui-ui/helm/button';
 
 // ❌ Avoid - Imports entire library
-import { HlmButtonImports } from '@spartan-ng/helm';
+import { HlmButtonImports } from 'grg-ui-ui/helm';
 ```
 
 ### 2. **Accessibility**
@@ -450,7 +450,7 @@ export class OptimizedComponent {}
 
 If you're migrating from brain components to helm:
 
-1. **Update Imports**: Change from `@spartan-ng/brain/*` to `@spartan-ng/helm/*`
+1. **Update Imports**: Change from `grg-ui-ui/brain/*` to `grg-ui-ui/helm/*`
 2. **Update Prefixes**: Change from `brn` to `hlm` prefixes
 3. **Add Styling**: Helm components come pre-styled, so you may need to adjust custom CSS
 4. **Update Templates**: Some component APIs may have changed slightly

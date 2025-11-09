@@ -9,13 +9,13 @@ describe('renameToTemplate', () => {
 		tree = createTreeWithEmptyWorkspace();
 	});
 
-	it('should replace @spartan-ng/helm with <%- importAlias %> and keep subpaths', () => {
+	it('should replace grg-ui-ui/helm with <%- importAlias %> and keep subpaths', () => {
 		// Arrange: create files
 		tree.write(
 			'src/lib/accordion.ts',
 			`
-      import { BrnAccordion } from '@spartan-ng/helm/accordion';
-      import { hlm } from '@spartan-ng/helm/core';
+      import { BrnAccordion } from 'grg-ui-ui/helm/accordion';
+      import { hlm } from 'grg-ui-ui/helm/core';
       import { somethingElse } from 'other-package';
     `,
 		);
@@ -23,7 +23,7 @@ describe('renameToTemplate', () => {
 		tree.write(
 			'src/lib/button.ts',
 			`
-      import { HlmButton } from '@spartan-ng/helm/button';
+      import { HlmButton } from 'grg-ui-ui/helm/button';
     `,
 		);
 

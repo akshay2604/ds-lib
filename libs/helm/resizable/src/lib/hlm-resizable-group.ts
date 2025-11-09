@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnResizableGroup } from '@spartan-ng/brain/resizable';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnResizableGroup } from 'grg-ui-ui/brain/resizable';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

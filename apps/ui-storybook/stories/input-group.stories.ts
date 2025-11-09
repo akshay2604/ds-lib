@@ -1,10 +1,10 @@
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideArrowUp, lucideCheck, lucideInfo, lucidePlus, lucideSearch, lucideSend } from '@ng-icons/lucide';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmInputGroup, HlmInputGroupImports } from '@spartan-ng/helm/input-group';
-import { HlmSeparatorImports } from '@spartan-ng/helm/separator';
-import { HlmTooltipImports } from '@spartan-ng/helm/tooltip';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmInputGroup, HlmInputGroupImports } from 'grg-ui-ui/helm/input-group';
+import { HlmSeparatorImports } from 'grg-ui-ui/helm/separator';
+import { HlmTooltipImports } from 'grg-ui-ui/helm/tooltip';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 
@@ -64,7 +64,7 @@ export const Default: Story = {
 			</div>
 		</div>
 		<div hlmInputGroup>
-			<input hlmInputGroupInput placeholder="@spartan" />
+			<input hlmInputGroupInput placeholder="grg-ui-ui" />
 			<div hlmInputGroupAddon align="inline-end">
 				<div class="bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-full">
 					<ng-icon hlm name="lucideCheck" size="xs" />

@@ -1,7 +1,7 @@
 import { FocusableOption, FocusOrigin } from '@angular/cdk/a11y';
 import { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, computed, Directive, ElementRef, inject, input } from '@angular/core';
-import { BrnButton } from '@spartan-ng/brain/button';
+import { BrnButton } from 'grg-ui-ui/brain/button';
 import { provideBrnNavigationMenuFocusable } from './brn-navigation-menu-item-focusable.token';
 import { injectBrnNavigationMenuItem } from './brn-navigation-menu-item.token';
 import { injectBrnNavigationMenu } from './brn-navigation-menu.token';

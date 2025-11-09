@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnAccordionTrigger } from '@spartan-ng/brain/accordion';
+import { BrnAccordionTrigger } from 'grg-ui-ui/brain/accordion';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

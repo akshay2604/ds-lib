@@ -12,37 +12,37 @@ export async function migrateCoreGenerator(tree: Tree, options: MigrateCoreGener
 }
 
 /**
- * Update imports from @spartan-ng/ui-core to @spartan-ng/brain/core
+ * Update imports from grg-ui-ui/ui-core to grg-ui-ui/brain/core
  */
 function updateImports(tree: Tree) {
 	visitFiles(tree, '/', (path) => {
 		const content = tree.read(path).toString('utf-8');
 
-		if (content.includes('@spartan-ng/ui-core')) {
+		if (content.includes('grg-ui-ui/ui-core')) {
 			const updatedCode = content
-				// Handle `import { ... } from '@spartan-ng/ui-core';`
-				.replace(/import\s+\{[^}]*\}\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `import { ... } from 'grg-ui-ui/ui-core';`
+				.replace(/import\s+\{[^}]*\}\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				)
-				// Handle `import type { ... } from '@spartan-ng/ui-core';`
-				.replace(/import\s+type\s+\{[^}]*\}\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `import type { ... } from 'grg-ui-ui/ui-core';`
+				.replace(/import\s+type\s+\{[^}]*\}\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				)
-				// Handle `export { ... } from '@spartan-ng/ui-core';`
-				.replace(/export\s+\{[^}]*\}\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `export { ... } from 'grg-ui-ui/ui-core';`
+				.replace(/export\s+\{[^}]*\}\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				)
-				// Handle `import * as name from '@spartan-ng/ui-core';`
-				.replace(/import\s+\*\s+as\s+\w+\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `import * as name from 'grg-ui-ui/ui-core';`
+				.replace(/import\s+\*\s+as\s+\w+\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				)
-				// Handle `import defaultExport from '@spartan-ng/ui-core';`
-				.replace(/import\s+\w+\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `import defaultExport from 'grg-ui-ui/ui-core';`
+				.replace(/import\s+\w+\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				)
-				// Handle `export * from '@spartan-ng/ui-core';`
-				.replace(/export\s+\*\s+from\s+['"]@spartan-ng\/ui-core['"];/g, (match) =>
-					match.replace('@spartan-ng/ui-core', '@spartan-ng/brain/core'),
+				// Handle `export * from 'grg-ui-ui/ui-core';`
+				.replace(/export\s+\*\s+from\s+['"]grg-ui-ui\/ui-core['"];/g, (match) =>
+					match.replace('grg-ui-ui/ui-core', 'grg-ui-ui/brain/core'),
 				);
 
 			tree.write(path, updatedCode);
@@ -56,13 +56,13 @@ function updateImports(tree: Tree) {
 function updateTailwindConfig(tree: Tree) {
 	visitFiles(tree, '/', (path) => {
 		// technically the tailwind config file could be anywhere and named anything
-		// but all we need to do is a simple string replace '@spartan-ng/ui-core/hlm-tailwind-preset' with '@spartan-ng/brain/hlm-tailwind-preset'
+		// but all we need to do is a simple string replace 'grg-ui-ui/ui-core/hlm-tailwind-preset' with 'grg-ui-ui/brain/hlm-tailwind-preset'
 		const content = tree.read(path).toString('utf-8');
 
-		if (content.includes('@spartan-ng/ui-core/hlm-tailwind-preset')) {
+		if (content.includes('grg-ui-ui/ui-core/hlm-tailwind-preset')) {
 			const updatedCode = content.replace(
-				/@spartan-ng\/ui-core\/hlm-tailwind-preset/g,
-				'@spartan-ng/brain/hlm-tailwind-preset',
+				/grg-ui-ui\/ui-core\/hlm-tailwind-preset/g,
+				'grg-ui-ui/brain/hlm-tailwind-preset',
 			);
 
 			tree.write(path, updatedCode);

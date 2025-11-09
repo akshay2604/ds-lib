@@ -40,8 +40,8 @@ describe('migrate-separator generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { BrnSeparator } from '@spartan-ng/brain/separator';
-			import { HlmSeparator } from '@spartan-ng/helm/separator';
+			import { BrnSeparator } from 'grg-ui-ui/brain/separator';
+			import { HlmSeparator } from 'grg-ui-ui/helm/separator';
 
 			@NgModule({
 				imports: [BrowserModule, BrnSeparator, HlmSeparator],
@@ -53,7 +53,7 @@ describe('migrate-separator generator', () => {
 		await migrateSeparatorGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.module.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnSeparator } from '@spartan-ng/brain/separator';`);
+		expect(content).not.toContain(`import { BrnSeparator } from 'grg-ui-ui/brain/separator';`);
 		expect(content).toContain(`imports: [BrowserModule, HlmSeparator],`);
 	});
 
@@ -62,8 +62,8 @@ describe('migrate-separator generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnSeparator } from '@spartan-ng/brain/separator';
-				import { HlmSeparator } from '@spartan-ng/helm/separator';
+				import { BrnSeparator } from 'grg-ui-ui/brain/separator';
+				import { HlmSeparator } from 'grg-ui-ui/helm/separator';
 				@Component({
 					imports: [BrnSeparator, HlmSeparator],
 					template: \`
@@ -77,8 +77,8 @@ describe('migrate-separator generator', () => {
 		await migrateSeparatorGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnSeparator } from '@spartan-ng/brain/separator';`);
-		expect(content).toContain(`import { HlmSeparator } from '@spartan-ng/helm/separator';`);
+		expect(content).not.toContain(`import { BrnSeparator } from 'grg-ui-ui/brain/separator';`);
+		expect(content).toContain(`import { HlmSeparator } from 'grg-ui-ui/helm/separator';`);
 		expect(content).toContain(`imports: [HlmSeparator],`);
 		expect(content).toContain(`<hlm-separator class="my-4" />`);
 	});
@@ -87,8 +87,8 @@ describe('migrate-separator generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnSeparator } from '@spartan-ng/brain/separator';
-				import { HlmSeparator } from '@spartan-ng/helm/separator';
+				import { BrnSeparator } from 'grg-ui-ui/brain/separator';
+				import { HlmSeparator } from 'grg-ui-ui/helm/separator';
 
 				@Component({
 					imports: [BrnSeparator, HlmSeparator],

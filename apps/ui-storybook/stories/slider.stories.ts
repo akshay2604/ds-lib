@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrnSliderImports } from '@spartan-ng/brain/slider';
-import { HlmSliderImports } from '@spartan-ng/helm/slider';
+import { BrnSliderImports } from 'grg-ui-ui/brain/slider';
+import { HlmSliderImports } from 'grg-ui-ui/helm/slider';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 interface BrnSliderStoryArgs {

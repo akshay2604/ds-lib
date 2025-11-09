@@ -1,4 +1,4 @@
-import { HlmButton } from '@spartan-ng/helm/button';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmButton> = {

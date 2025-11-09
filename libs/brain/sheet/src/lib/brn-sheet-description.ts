@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { BrnDialogDescription } from '@spartan-ng/brain/dialog';
+import { BrnDialogDescription } from 'grg-ui-ui/brain/dialog';
 
 @Directive({
 	selector: '[brnSheetDescription]',

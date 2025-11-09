@@ -1,6 +1,6 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnDialogDescription } from '@spartan-ng/brain/dialog';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnDialogDescription } from 'grg-ui-ui/brain/dialog';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

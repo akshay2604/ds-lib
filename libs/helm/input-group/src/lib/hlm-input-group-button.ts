@@ -1,6 +1,6 @@
 import { computed, Directive, effect, inject, input } from '@angular/core';
-import { HlmButton, provideBrnButtonConfig } from '@spartan-ng/helm/button';
-import { hlm } from '@spartan-ng/helm/utils';
+import { HlmButton, provideBrnButtonConfig } from 'grg-ui-ui/helm/button';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 

@@ -10,4 +10,4 @@ export const [
 	provideExposesStateProvider,
 	provideExposesStateProviderExisting,
 	EXPOSES_STATE_TOKEN,
-] = createInjectionToken<ExposesState>('@spartan-ng EXPOSES_STATE_TOKEN');
+] = createInjectionToken<ExposesState>('grg-ui-ui EXPOSES_STATE_TOKEN');

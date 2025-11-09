@@ -59,7 +59,7 @@ describe('hlmBaseGenerator', () => {
 			directory: 'libs/test-ui',
 			buildable: true,
 			generateAs: 'library' as const,
-			importAlias: '@spartan-ng/helm',
+			importAlias: 'grg-ui-ui/helm',
 		};
 
 		await hlmBaseGenerator(tree, options);
@@ -76,7 +76,7 @@ describe('hlmBaseGenerator', () => {
 			directory: 'libs/test-ui',
 			buildable: false,
 			generateAs: 'entrypoint' as const,
-			importAlias: '@spartan-ng/helm',
+			importAlias: 'grg-ui-ui/helm',
 		};
 
 		await hlmBaseGenerator(tree, options);
@@ -86,8 +86,8 @@ describe('hlmBaseGenerator', () => {
 		const libDir = joinPathFragments(baseDir, 'lib');
 		expect(tree.exists(libDir)).toBe(false);
 		const tsconfig = readJson(tree, 'tsconfig.base.json');
-		expect(tsconfig.compilerOptions.paths).toHaveProperty('@spartan-ng/helm/input');
-		expect(tsconfig.compilerOptions.paths['@spartan-ng/helm/input'][0]).toContain('libs/test-ui/input/src/index.ts');
+		expect(tsconfig.compilerOptions.paths).toHaveProperty('grg-ui-ui/helm/input');
+		expect(tsconfig.compilerOptions.paths['grg-ui-ui/helm/input'][0]).toContain('libs/test-ui/input/src/index.ts');
 	});
 
 	it('should generate files correctly for a secondary entrypoint and buildable true', async () => {
@@ -100,13 +100,13 @@ describe('hlmBaseGenerator', () => {
 			directory: 'libs/test-ui',
 			buildable: true,
 			generateAs: 'entrypoint' as const,
-			importAlias: '@spartan-ng/helm',
+			importAlias: 'grg-ui-ui/helm',
 		};
 
 		await libraryGenerator(tree, {
 			buildable: true,
 			name: singleLibName,
-			importPath: '@spartan-ng/helm',
+			importPath: 'grg-ui-ui/helm',
 			directory: 'libs/test-ui',
 			skipTests: true,
 			unitTestRunner: UnitTestRunner.None,
@@ -119,8 +119,8 @@ describe('hlmBaseGenerator', () => {
 		const libDir = joinPathFragments(baseDir, 'lib');
 		expect(tree.exists(libDir)).toBe(false);
 		const tsconfig = readJson(tree, 'tsconfig.base.json');
-		expect(tsconfig.compilerOptions.paths).toHaveProperty('@spartan-ng/helm/input');
-		expect(tsconfig.compilerOptions.paths['@spartan-ng/helm/input'][0]).toContain('libs/test-ui/input/src/index.ts');
+		expect(tsconfig.compilerOptions.paths).toHaveProperty('grg-ui-ui/helm/input');
+		expect(tsconfig.compilerOptions.paths['grg-ui-ui/helm/input'][0]).toContain('libs/test-ui/input/src/index.ts');
 	});
 
 	it('should register the correct dependencies', async () => {
@@ -131,7 +131,7 @@ describe('hlmBaseGenerator', () => {
 			directory: 'libs/test-ui',
 			buildable: false,
 			generateAs: 'entrypoint' as const,
-			importAlias: '@spartan-ng/helm',
+			importAlias: 'grg-ui-ui/helm',
 		};
 
 		await hlmBaseGenerator(tree, options);
@@ -150,7 +150,7 @@ describe('hlmBaseGenerator', () => {
 			directory: 'libs/test-ui',
 			buildable: false,
 			generateAs: 'entrypoint' as const,
-			importAlias: '@spartan-ng/helm',
+			importAlias: 'grg-ui-ui/helm',
 		};
 
 		await hlmBaseGenerator(tree, options);

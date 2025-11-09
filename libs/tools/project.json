@@ -42,7 +42,7 @@
 			"outputs": ["{options.outputFile}"]
 		},
 		"generate-ui-docs": {
-			"executor": "@spartan-ng/tools:generate-ui-docs",
+			"executor": "grg-ui-ui/tools:generate-ui-docs",
 			"options": {
 				"outputDir": "dist/extracted-metadata",
 				"outputFile": "ui-api.json",

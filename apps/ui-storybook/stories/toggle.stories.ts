@@ -2,8 +2,8 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideItalic } from '@ng-icons/lucide';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmToggle } from '@spartan-ng/helm/toggle';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmToggle } from 'grg-ui-ui/helm/toggle';
 
 const meta: Meta<HlmToggle> = {
 	title: 'Toggle',

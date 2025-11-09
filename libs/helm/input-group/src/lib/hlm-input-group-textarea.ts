@@ -1,6 +1,6 @@
 import { computed, Directive, effect, inject, input } from '@angular/core';
-import { HlmTextarea } from '@spartan-ng/helm/textarea';
-import { hlm } from '@spartan-ng/helm/utils';
+import { HlmTextarea } from 'grg-ui-ui/helm/textarea';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

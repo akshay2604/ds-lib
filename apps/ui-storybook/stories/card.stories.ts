@@ -1,10 +1,10 @@
-import { BrnSelectImports } from '@spartan-ng/brain/select';
-import { HlmBadge } from '@spartan-ng/helm/badge';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmCard, HlmCardImports } from '@spartan-ng/helm/card';
-import { HlmInput } from '@spartan-ng/helm/input';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmSelectImports } from '@spartan-ng/helm/select';
+import { BrnSelectImports } from 'grg-ui-ui/brain/select';
+import { HlmBadge } from 'grg-ui-ui/helm/badge';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmCard, HlmCardImports } from 'grg-ui-ui/helm/card';
+import { HlmInput } from 'grg-ui-ui/helm/input';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmSelectImports } from 'grg-ui-ui/helm/select';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 
@@ -70,7 +70,7 @@ export const Transposed: Story = {
       </div>
       <p hlmCardContent>
        <label class='block' hlmLabel>E-mail
-       <input class='w-full mt-1.5' placeholder='you@spartan-ng' hlmInput>
+       <input class='w-full mt-1.5' placeholder='yougrg-ui' hlmInput>
        </label>
          <label class='block my-4' hlmLabel>Password
        <input class='w-full mt-1.5' type='password' hlmInput>

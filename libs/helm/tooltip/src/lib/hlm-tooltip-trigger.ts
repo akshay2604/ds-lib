@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from '@spartan-ng/brain/tooltip';
+import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from 'grg-ui-ui/brain/tooltip';
 
 export const DEFAULT_TOOLTIP_CONTENT_CLASSES =
 	'bg-primary text-primary-foreground animate-in fade-in-0 zoom-in-95 z-50 w-fit rounded-md px-3 py-1.5 text-xs text-balance ' +

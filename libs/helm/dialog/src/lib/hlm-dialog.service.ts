@@ -5,7 +5,7 @@ import {
 	BrnDialogService,
 	DEFAULT_BRN_DIALOG_OPTIONS,
 	cssClassesToArray,
-} from '@spartan-ng/brain/dialog';
+} from 'grg-ui-ui/brain/dialog';
 import { HlmDialogContent } from './hlm-dialog-content';
 import { hlmDialogOverlayClass } from './hlm-dialog-overlay';
 

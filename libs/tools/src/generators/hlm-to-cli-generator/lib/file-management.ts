@@ -48,12 +48,12 @@ export function renameToTemplate(tree: Tree, filePath: string) {
 
 		const sourceFile = project.createSourceFile(file, fileContent, { overwrite: true });
 
-		// Replace imports from '@spartan-ng/helm' while preserving subpaths
+		// Replace imports from 'grg-ui-ui/helm' while preserving subpaths
 		sourceFile.getImportDeclarations().forEach((importDec) => {
 			const moduleSpecifier = importDec.getModuleSpecifierValue();
-			if (moduleSpecifier.startsWith('@spartan-ng/helm')) {
-				// Keep the path after @spartan-ng/helm
-				const subPath = moduleSpecifier.slice('@spartan-ng/helm'.length);
+			if (moduleSpecifier.startsWith('grg-ui-ui/helm')) {
+				// Keep the path after grg-ui-ui/helm
+				const subPath = moduleSpecifier.slice('grg-ui-ui/helm'.length);
 				importDec.setModuleSpecifier(`<%- importAlias %>${subPath}`);
 			}
 		});

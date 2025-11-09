@@ -87,11 +87,11 @@ async function detectLibraries(tree: Tree, importAlias: string): Promise<Primiti
 	const existingLibraries: Primitive[] = [];
 
 	for (const libraryName in supportedLibraries) {
-		if (tsconfigPaths[`@spartan-ng/ui-${libraryName}-helm`]) {
+		if (tsconfigPaths[`grg-ui-ui/ui-${libraryName}-helm`]) {
 			existingLibraries.push(libraryName as Primitive);
-		} else if (tsconfigPaths[`@spartan-ng/ui-${libraryName.replaceAll('-', '')}-helm`]) {
+		} else if (tsconfigPaths[`grg-ui-ui/ui-${libraryName.replaceAll('-', '')}-helm`]) {
 			existingLibraries.push(libraryName as Primitive);
-		} else if (tsconfigPaths[`@spartan-ng/helm/${libraryName}`]) {
+		} else if (tsconfigPaths[`grg-ui-ui/helm/${libraryName}`]) {
 			existingLibraries.push(libraryName as Primitive);
 		} else if (tsconfigPaths[`${importAlias}/${libraryName}`]) {
 			existingLibraries.push(libraryName as Primitive);
@@ -115,13 +115,13 @@ async function removeExistingLibraries(
 
 		if (`${options.importAlias}/${library}` in tsconfigPaths) {
 			importPath = `${options.importAlias}/${library}`;
-		} else if (`@spartan-ng/helm/${library}` in tsconfigPaths) {
-			importPath = `@spartan-ng/helm/${library}`;
-		} else if (`@spartan-ng/ui-${library}-helm` in tsconfigPaths) {
-			importPath = `@spartan-ng/ui-${library}-helm`;
+		} else if (`grg-ui-ui/helm/${library}` in tsconfigPaths) {
+			importPath = `grg-ui-ui/helm/${library}`;
+		} else if (`grg-ui-ui/ui-${library}-helm` in tsconfigPaths) {
+			importPath = `grg-ui-ui/ui-${library}-helm`;
 		} // there is also a case where the library previous was added without hypens e.g. ui-aspectratio-helm
-		else if (`@spartan-ng/ui-${compatLibrary}-helm` in tsconfigPaths) {
-			importPath = `@spartan-ng/ui-${compatLibrary}-helm`;
+		else if (`grg-ui-ui/ui-${compatLibrary}-helm` in tsconfigPaths) {
+			importPath = `grg-ui-ui/ui-${compatLibrary}-helm`;
 		}
 
 		// get the tsconfig path for the library

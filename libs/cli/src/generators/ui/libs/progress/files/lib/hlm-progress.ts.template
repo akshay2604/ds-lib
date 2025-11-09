@@ -1,5 +1,5 @@
 import { computed, Directive, input } from '@angular/core';
-import { BrnProgress } from '@spartan-ng/brain/progress';
+import { BrnProgress } from 'grg-ui-ui/brain/progress';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnDialogClose } from '@spartan-ng/brain/dialog';
+import { BrnDialogClose } from 'grg-ui-ui/brain/dialog';
 import { HlmButton, provideBrnButtonConfig } from '<%- importAlias %>/button';
 import { provideHlmIconConfig } from '<%- importAlias %>/icon';
 import { hlm } from '<%- importAlias %>/utils';

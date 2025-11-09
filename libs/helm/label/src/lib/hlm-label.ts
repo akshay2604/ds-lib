@@ -1,6 +1,6 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnLabel } from '@spartan-ng/brain/label';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnLabel } from 'grg-ui-ui/brain/label';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

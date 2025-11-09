@@ -1,7 +1,7 @@
 import type { BooleanInput } from '@angular/cdk/coercion';
 import { booleanAttribute, computed, Directive, input } from '@angular/core';
-import { BrnMenuItem } from '@spartan-ng/brain/menu';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnMenuItem } from 'grg-ui-ui/brain/menu';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

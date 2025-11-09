@@ -1,8 +1,8 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideSlash } from '@ng-icons/lucide';
-import { HlmBreadCrumbImports, HlmBreadcrumb } from '@spartan-ng/helm/breadcrumb';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+import { HlmBreadCrumbImports, HlmBreadcrumb } from 'grg-ui-ui/helm/breadcrumb';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

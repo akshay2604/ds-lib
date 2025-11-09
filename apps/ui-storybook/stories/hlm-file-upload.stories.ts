@@ -1,4 +1,4 @@
-import { HlmFileUploadComponent } from '@spartan-ng/helm/file-upload';
+import { HlmFileUploadComponent } from 'grg-ui-ui/helm/file-upload';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, input } from '@angular/core';
-import { BrnAccordionContent } from '@spartan-ng/brain/accordion';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnAccordionContent } from 'grg-ui-ui/brain/accordion';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

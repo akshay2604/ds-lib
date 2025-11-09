@@ -15,8 +15,8 @@ import {
 	ViewContainerRef,
 } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { BrnButton } from '@spartan-ng/brain/button';
-import { createHoverObservable, isElement } from '@spartan-ng/brain/core';
+import { BrnButton } from 'grg-ui-ui/brain/button';
+import { createHoverObservable, isElement } from 'grg-ui-ui/brain/core';
 import { fromEvent, merge, Observable, of, Subject } from 'rxjs';
 import {
 	debounceTime,

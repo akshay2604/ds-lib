@@ -39,8 +39,8 @@ describe('migrate-toggle-group generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnToggleGroupModule, BrnToggleDirective } from '@spartan-ng/brain/toggle';
-				import { HlmToggleDirective, HlmToggleGroupModule } from '@spartan-ng/ui-toggle-helm';
+				import { BrnToggleGroupModule, BrnToggleDirective } from 'grg-ui-ui/brain/toggle';
+				import { HlmToggleDirective, HlmToggleGroupModule } from 'grg-ui-ui/ui-toggle-helm';
 
 				@Component({
 					imports: [BrnToggleGroupModule, HlmToggleGroupModule, HlmButtonDirective, FormsModule],
@@ -76,12 +76,12 @@ describe('migrate-toggle-group generator', () => {
 		await migrateToggleGroupGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain("import { BrnToggleGroupModule } from '@spartan-ng/brain/toggle'");
+		expect(content).not.toContain("import { BrnToggleGroupModule } from 'grg-ui-ui/brain/toggle'");
 		expect(content).toContain(
-			"import { BrnToggleGroupComponent, BrnToggleGroupItemDirective } from '@spartan-ng/brain/toggle-group'",
+			"import { BrnToggleGroupComponent, BrnToggleGroupItemDirective } from 'grg-ui-ui/brain/toggle-group'",
 		);
 		expect(content).toContain(
-			"import { HlmToggleGroupDirective, HlmToggleGroupItemDirective } from '@spartan-ng/ui-toggle-group-helm'",
+			"import { HlmToggleGroupDirective, HlmToggleGroupItemDirective } from 'grg-ui-ui/ui-toggle-group-helm'",
 		);
 		expect(content).toContain(
 			'imports: [BrnToggleGroupComponent, BrnToggleGroupItemDirective, HlmToggleGroupDirective, HlmToggleGroupItemDirective, HlmButtonDirective, FormsModule],',
@@ -93,8 +93,8 @@ describe('migrate-toggle-group generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnToggleGroupModule } from '@spartan-ng/brain/toggle';
-				import { HlmButtonDirective, FormsModule, } from '@spartan-ng/ui-toggle-group-helm';
+				import { BrnToggleGroupModule } from 'grg-ui-ui/brain/toggle';
+				import { HlmButtonDirective, FormsModule, } from 'grg-ui-ui/ui-toggle-group-helm';
 				@Component({
 					imports: [BrnToggleGroupModule, HlmToggleGroupModule, HlmButtonDirective, FormsModule,],
 					template: \`

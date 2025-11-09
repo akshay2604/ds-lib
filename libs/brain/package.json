@@ -1,5 +1,5 @@
 {
-	"name": "@spartan-ng/brain",
+	"name": "grg-ui-ui/brain",
 	"version": "0.0.1-alpha.542",
 	"sideEffects": false,
 	"exports": {

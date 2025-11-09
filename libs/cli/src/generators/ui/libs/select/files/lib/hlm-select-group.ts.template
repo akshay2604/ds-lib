@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnSelectGroup } from '@spartan-ng/brain/select';
+import { BrnSelectGroup } from 'grg-ui-ui/brain/select';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

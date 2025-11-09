@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Renderer2, computed, effect, inject, input, signal } from '@angular/core';
-import { injectExposesStateProvider } from '@spartan-ng/brain/core';
-import { hlm } from '@spartan-ng/helm/utils';
+import { injectExposesStateProvider } from 'grg-ui-ui/brain/core';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

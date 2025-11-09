@@ -1,5 +1,5 @@
 {
-	"name": "spartan",
+	"name": "grg-ui",
 	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
@@ -13,12 +13,12 @@
 		"drizzle": "npx drizzle-kit generate --config=./apps/app/drizzle.config.ts",
 		"e2e": "nx run-many --target e2e --projects=tag:scope:e2e --all --parallel=1 --outputStyle=stream",
 		"format": "nx format --write --all",
-		"generate-snippets": "npx nx generate @spartan-ng/tools:generate-primitive-snippets",
+		"generate-snippets": "npx nx generate grg-ui-ui/tools:generate-primitive-snippets",
 		"lint": "nx run-many --target=lint --parallel",
 		"pre-manual-release": "pnpm run prepare-manual-release && pnpm run format && nx run tools:lint --fix",
 		"pre-nightly-release": "pnpm run prepare-nightly-release && pnpm run format && nx run tools:lint --fix",
-		"prepare-manual-release": "nx g @spartan-ng/tools:replace-ui-version && nx run-many --target=lint --parallel --fix && nx g @spartan-ng/tools:hlm-to-cli-generator && nx g @spartan-ng/tools:replace-cli-version",
-		"prepare-nightly-release": "nx g @spartan-ng/tools:auto-increment-version && nx run-many --target=lint --parallel --fix && nx g @spartan-ng/tools:hlm-to-cli-generator",
+		"prepare-manual-release": "nx g grg-ui-ui/tools:replace-ui-version && nx run-many --target=lint --parallel --fix && nx g grg-ui-ui/tools:hlm-to-cli-generator && nx g grg-ui-ui/tools:replace-cli-version",
+		"prepare-nightly-release": "nx g grg-ui-ui/tools:auto-increment-version && nx run-many --target=lint --parallel --fix && nx g grg-ui-ui/tools:hlm-to-cli-generator",
 		"release": "pnpm run release-ui && pnpm run release-cli",
 		"release-cli": "nx run-many --target=release --projects=tag:scope:cli --parallel=1",
 		"release-ui": "nx run-many --target=release --projects=tag:scope:core,tag:scope:brain --parallel=1",
@@ -221,5 +221,5 @@
 		"cypress",
 		"sharp"
 	],
-	"_id": "spartan@0.0.0"
+	"_id": "grg-ui@0.0.0"
 }

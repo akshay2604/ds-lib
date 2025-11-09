@@ -1,14 +1,14 @@
 import { JsonPipe } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrnSelectImports } from '@spartan-ng/brain/select';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmCheckbox } from '@spartan-ng/helm/checkbox';
-import { HlmFieldImports } from '@spartan-ng/helm/field';
-import { HlmInputImports } from '@spartan-ng/helm/input';
-import { HlmRadioGroupImports } from '@spartan-ng/helm/radio-group';
-import { HlmSelectImports } from '@spartan-ng/helm/select';
-import { HlmSwitch } from '@spartan-ng/helm/switch';
-import { HlmTextarea } from '@spartan-ng/helm/textarea';
+import { BrnSelectImports } from 'grg-ui-ui/brain/select';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmCheckbox } from 'grg-ui-ui/helm/checkbox';
+import { HlmFieldImports } from 'grg-ui-ui/helm/field';
+import { HlmInputImports } from 'grg-ui-ui/helm/input';
+import { HlmRadioGroupImports } from 'grg-ui-ui/helm/radio-group';
+import { HlmSelectImports } from 'grg-ui-ui/helm/select';
+import { HlmSwitch } from 'grg-ui-ui/helm/switch';
+import { HlmTextarea } from 'grg-ui-ui/helm/textarea';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta = {

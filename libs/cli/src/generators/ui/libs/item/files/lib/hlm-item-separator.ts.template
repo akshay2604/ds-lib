@@ -1,5 +1,5 @@
 import { computed, Directive, input } from '@angular/core';
-import { BrnSeparator } from '@spartan-ng/brain/separator';
+import { BrnSeparator } from 'grg-ui-ui/brain/separator';
 import { hlmSeparatorClass } from '<%- importAlias %>/separator';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';

@@ -48,7 +48,7 @@
 		"migrate-hlm": {
 			"factory": "./src/generators/migrate-hlm/generator",
 			"schema": "./src/generators/migrate-hlm/schema.json",
-			"description": "Migrate hlm import from @spartan-ng/brain to @spartan-ng/helm/utils"
+			"description": "Migrate hlm import from grg-ui-ui/brain to grg-ui-ui/helm/utils"
 		},
 		"migrate-icon": {
 			"factory": "./src/generators/migrate-icon/generator",
@@ -93,17 +93,17 @@
 		"migrate-toggle-group": {
 			"factory": "./src/generators/migrate-toggle-group/generator",
 			"schema": "./src/generators/migrate-toggle-group/schema.json",
-			"description": "Migrate brn-toggle-group from @spartan-ng/brain/toggle to @spartan-ng/brain/toggle-group"
+			"description": "Migrate brn-toggle-group from grg-ui-ui/brain/toggle to grg-ui-ui/brain/toggle-group"
 		},
 		"ui": {
 			"factory": "./src/generators/ui/generator",
 			"schema": "./src/generators/ui/schema.json",
-			"description": "spartan-ng ui generator"
+			"description": "grg-ui ui generator"
 		},
 		"ui-theme": {
 			"factory": "./src/generators/theme/generator",
 			"schema": "./src/generators/theme/schema.json",
-			"description": "spartan-ng theme generator"
+			"description": "grg-ui theme generator"
 		}
 	},
 	"schematics": {
@@ -155,7 +155,7 @@
 		"migrate-hlm": {
 			"factory": "./src/generators/migrate-hlm/compat",
 			"schema": "./src/generators/migrate-hlm/schema.json",
-			"description": "Migrate hlm import from @spartan-ng/brain to @spartan-ng/helm/utils"
+			"description": "Migrate hlm import from grg-ui-ui/brain to grg-ui-ui/helm/utils"
 		},
 		"migrate-icon": {
 			"factory": "./src/generators/migrate-icon/compat",
@@ -200,17 +200,17 @@
 		"migrate-toggle-group": {
 			"factory": "./src/generators/migrate-toggle-group/compat",
 			"schema": "./src/generators/migrate-toggle-group/schema.json",
-			"description": "Migrate brn-toggle-group from @spartan-ng/brain/toggle to @spartan-ng/brain/toggle-group"
+			"description": "Migrate brn-toggle-group from grg-ui-ui/brain/toggle to grg-ui-ui/brain/toggle-group"
 		},
 		"ui": {
 			"factory": "./src/generators/ui/compat",
 			"schema": "./src/generators/ui/schema.json",
-			"description": "spartan-ng ui generator"
+			"description": "grg-ui ui generator"
 		},
 		"ui-theme": {
 			"factory": "./src/generators/theme/compat",
 			"schema": "./src/generators/theme/schema.json",
-			"description": "spartan-ng theme generator"
+			"description": "grg-ui theme generator"
 		}
 	}
 }

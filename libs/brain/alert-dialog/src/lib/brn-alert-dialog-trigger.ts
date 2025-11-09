@@ -1,5 +1,5 @@
 import { Directive, effect, input, untracked } from '@angular/core';
-import { BrnDialogTrigger } from '@spartan-ng/brain/dialog';
+import { BrnDialogTrigger } from 'grg-ui-ui/brain/dialog';
 import type { BrnAlertDialog } from './brn-alert-dialog';
 
 @Directive({

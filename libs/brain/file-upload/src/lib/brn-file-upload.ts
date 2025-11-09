@@ -11,8 +11,8 @@ import {
 	signal,
 } from '@angular/core';
 import { type ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import type { ChangeFn, TouchFn } from '@spartan-ng/brain/forms';
-import { BrnFormFieldControl } from '@spartan-ng/brain/form-field';
+import type { ChangeFn, TouchFn } from 'grg-ui-ui/brain/forms';
+import { BrnFormFieldControl } from 'grg-ui-ui/brain/form-field';
 import type {
 	FileUploadError,
 	FileUploadEvent,

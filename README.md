@@ -1,21 +1,21 @@
-# spartan
+# grg-ui
 
-<a href="https://spartan.ng" target="_blank">
-<img alt="A spartan shield" width="200px" src="./spartan.svg" title="Spartan logo"/>
+<a href="https://grg-ui.ng" target="_blank">
+<img alt="A grg-ui shield" width="200px" src="./grg-ui.svg" title="Spartan logo"/>
 </a>
 
 [![Discord server](https://dcbadge.limes.pink/api/server/EqHnxQ4uQr?style=flat-square)](https://discord.gg/EqHnxQ4uQr) [![Twitter](https://img.shields.io/twitter/follow/goetzrobin?color=%23DD0031&style=flat-square)](https://twitter.com/goetzrobin)
 
-Welcome to the spartan mono-repo. This Nx repository holds both the
-spartan/stack and spartan/ui libraries.
+Welcome to the grg-ui mono-repo. This Nx repository holds both the
+grg-ui/stack and grg-ui/ui libraries.
 
 ##### Important: This is a work in progress, and we update the README as major development efforts are started.
 
 ## The 300 spartans
 
-All of spartan is an MIT-licensed open source project with its ongoing development made possible by contributors and sponsors.
+All of grg-ui is an MIT-licensed open source project with its ongoing development made possible by contributors and sponsors.
 
-Our initial 300 contributors and sponsors are featured here and on the front page of [spartan.ng](https://spartan.ng)
+Our initial 300 contributors and sponsors are featured here and on the front page of [grg-ui.ng](https://grg-ui.ng)
 
 1. [goetzrobin](https://github.com/goetzrobin)
 2. [elite-benni](https://github.com/elite-benni)
@@ -132,7 +132,7 @@ Our initial 300 contributors and sponsors are featured here and on the front pag
 113. [dw-0](https://github.com/dw-0)
 114. [Khumozin](https://github.com/Khumozin)
 
-[Become a spartan today!](https://github.com/sponsors/goetzrobin)
+[Become a grg-ui today!](https://github.com/sponsors/goetzrobin)
 
 ## Zerops: The Strategic Alliance
 
@@ -142,7 +142,7 @@ Our initial 300 contributors and sponsors are featured here and on the front pag
   </a>
 </div>
 
-spartan.ng has formed a powerful alliance with Zerops, a developer-first cloud platform that shares our commitment to advancing the Angular ecosystem.
+grg-ui.ng has formed a powerful alliance with Zerops, a developer-first cloud platform that shares our commitment to advancing the Angular ecosystem.
 
 Through their strategic support, Zerops has enabled:
 
@@ -155,9 +155,9 @@ Zerops eliminates deployment complexity so developers can focus on building grea
 
 **[Experience the cloud platform that's powering Spartan.ng's future →](https://zerops.io)**
 
-## spartan/ui
+## grg-ui/ui
 
-spartan/ui is our effort to port the incredible shadcn/ui project over to the Angular ecosystem.
+grg-ui/ui is our effort to port the incredible shadcn/ui project over to the Angular ecosystem.
 
 The idea is to create un-styled primitives similar to Radix with the help of the Angular CDK and other proven community solutions
 And then add the beautiful shadcn styles with primitives (and components where necessary).
@@ -166,7 +166,7 @@ You can find all UI primitives in the `libs/ui` folder.
 
 Each primitive is made up off an un-styled `brain` library, which provides all functionality and a `helm` library, which adds the styles.
 
-There's also a `libs/cli` folder, which contains the Nx-plugin & Angular CLI code that allows users to add spartan/ui to their Nx or Angular workspace in a simple way.
+There's also a `libs/cli` folder, which contains the Nx-plugin & Angular CLI code that allows users to add grg-ui/ui to their Nx or Angular workspace in a simple way.
 
 ### Install Dependencies
 
@@ -186,7 +186,7 @@ Use these files to add stories and drive development of the primitives.
 
 ### Testing
 
-spartan uses [Jest](https://jestjs.io) for tests. To test all projects locally, run the following command from the root
+grg-ui uses [Jest](https://jestjs.io) for tests. To test all projects locally, run the following command from the root
 folder:
 
 ```shell
@@ -203,7 +203,7 @@ pnpm run e2e
 
 To add your own `e2e` tests add them to the `apps/ui-storybook-e2e` application.
 
-## spartan/stack
+## grg-ui/stack
 
 An example application running
 on [Supabase](https://supabase.com/), [Drizzle](https://orm.drizzle.team/), [Analog](https://analogjs.org/),
@@ -211,11 +211,11 @@ on [Supabase](https://supabase.com/), [Drizzle](https://orm.drizzle.team/), [Ana
 and [Nx](https://nx.dev/). It also serves as the documentation page introducing the stack and UI library.
 
 Follow the directions in the official documentation to set up your own project:
-https://www.spartan.ng/stack/overview
+https://www.grg-ui.ng/stack/overview
 
 ### Example App
 
-In the `apps` folder of this repository, you can also find an example application of the spartan stack.
+In the `apps` folder of this repository, you can also find an example application of the grg-ui stack.
 It also serves as the documentation page for this project.
 
 For now. The goal is to move the docs to Astro.

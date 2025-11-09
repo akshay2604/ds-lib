@@ -3,8 +3,8 @@ import {
 	BRN_ALERT_DIALOG_DEFAULT_OPTIONS,
 	BrnAlertDialog,
 	BrnAlertDialogOverlay,
-} from '@spartan-ng/brain/alert-dialog';
-import { BrnDialog, provideBrnDialogDefaultOptions } from '@spartan-ng/brain/dialog';
+} from 'grg-ui-ui/brain/alert-dialog';
+import { BrnDialog, provideBrnDialogDefaultOptions } from 'grg-ui-ui/brain/dialog';
 import { HlmAlertDialogOverlay } from './hlm-alert-dialog-overlay';
 
 @Component({

@@ -9,4 +9,4 @@ export const [
 	provideTableClassesSettable,
 	provideTableClassesSettableExisting,
 	SET_TABLE_CLASSES_TOKEN,
-] = createInjectionToken<TableClassesSettable>('@spartan-ng SET_TABLE_CLASSES_TOKEN');
+] = createInjectionToken<TableClassesSettable>('grg-ui-ui SET_TABLE_CLASSES_TOKEN');

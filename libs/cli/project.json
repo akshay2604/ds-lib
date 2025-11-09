@@ -49,7 +49,7 @@
 			}
 		},
 		"release": {
-			"executor": "@spartan-ng/tools:build-update-publish",
+			"executor": "grg-ui-ui/tools:build-update-publish",
 			"options": {
 				"libName": "cli"
 			}

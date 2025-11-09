@@ -10,8 +10,8 @@ import {
 	lucideSearch,
 	lucideSettings,
 } from '@ng-icons/lucide';
-import { BrnSeparator } from '@spartan-ng/brain/separator';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+import { BrnSeparator } from 'grg-ui-ui/brain/separator';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 import {
 	HlmSidebar,
 	HlmSidebarContent,
@@ -36,7 +36,7 @@ import {
 	HlmSidebarSeparator,
 	HlmSidebarTrigger,
 	HlmSidebarWrapper,
-} from '@spartan-ng/helm/sidebar';
+} from 'grg-ui-ui/helm/sidebar';
 import { type Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 
 const meta: Meta<{}> = {

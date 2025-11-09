@@ -1,3 +1,3 @@
-# @spartan-ng/helm/form-field
+# grg-ui-ui/helm/form-field
 
-Secondary entry point of `@spartan-ng/helm`. It can be used by importing from `@spartan-ng/helm/form-field`.
+Secondary entry point of `grg-ui-ui/helm`. It can be used by importing from `grg-ui-ui/helm/form-field`.

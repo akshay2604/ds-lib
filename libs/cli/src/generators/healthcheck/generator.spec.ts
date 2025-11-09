@@ -12,11 +12,11 @@ describe('healthcheck generator', () => {
 
 		writeJson(tree, 'package.json', {
 			dependencies: {
-				'@spartan-ng/brain': '0.0.1-alpha.300',
-				'@spartan-ng/ui-checkbox-brain': '0.0.1-alpha.300',
+				'grg-ui-ui/brain': '0.0.1-alpha.300',
+				'grg-ui-ui/ui-checkbox-brain': '0.0.1-alpha.300',
 			},
 			devDependencies: {
-				'@spartan-ng/cli': '0.0.1-alpha.300',
+				'grg-ui-ui/cli': '0.0.1-alpha.300',
 			},
 		});
 
@@ -24,9 +24,9 @@ describe('healthcheck generator', () => {
 		tree.write(
 			'libs/my-lib/src/index.ts',
 			`
-			import { BrnCheckbox } from '@spartan-ng/ui-checkbox-brain';
-			import { hlm } from '@spartan-ng/ui-core';
-			import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
+			import { BrnCheckbox } from 'grg-ui-ui/ui-checkbox-brain';
+			import { hlm } from 'grg-ui-ui/ui-core';
+			import { HlmButtonDirective } from 'grg-ui-ui/ui-button-helm';
 		`,
 		);
 
@@ -37,19 +37,19 @@ describe('healthcheck generator', () => {
 			`
 import { Component } from '@angular/core';
 
-import { BrnAccordionModule } from '@spartan-ng/brain/accordion';
-import { BrnAlertDialogModule } from '@spartan-ng/brain/alertDialog';
-import { BrnAutocompleteModule } from '@spartan-ng/brain/autocomplete';
-import { BrnAvatarModule } from '@spartan-ng/brain/avatar';
-import { BrnButtonModule } from '@spartan-ng/brain/button';
-import { BrnCalendarModule } from '@spartan-ng/brain/calendar';
-import { BrnCheckboxModule } from '@spartan-ng/brain/checkbox';
-import { BrnCollapsibleModule } from '@spartan-ng/brain/collapsible';
-import { BrnCommandModule } from '@spartan-ng/brain/command';
-import { BrnDialogModule } from '@spartan-ng/brain/dialog';
-import { BrnHoverCardModule } from '@spartan-ng/brain/hoverCard';
-import { BrnInputOtpModule } from '@spartan-ng/brain/inputOtp';
-import { BrnLabelModule } from '@spartan-ng/brain/label';
+import { BrnAccordionModule } from 'grg-ui-ui/brain/accordion';
+import { BrnAlertDialogModule } from 'grg-ui-ui/brain/alertDialog';
+import { BrnAutocompleteModule } from 'grg-ui-ui/brain/autocomplete';
+import { BrnAvatarModule } from 'grg-ui-ui/brain/avatar';
+import { BrnButtonModule } from 'grg-ui-ui/brain/button';
+import { BrnCalendarModule } from 'grg-ui-ui/brain/calendar';
+import { BrnCheckboxModule } from 'grg-ui-ui/brain/checkbox';
+import { BrnCollapsibleModule } from 'grg-ui-ui/brain/collapsible';
+import { BrnCommandModule } from 'grg-ui-ui/brain/command';
+import { BrnDialogModule } from 'grg-ui-ui/brain/dialog';
+import { BrnHoverCardModule } from 'grg-ui-ui/brain/hoverCard';
+import { BrnInputOtpModule } from 'grg-ui-ui/brain/inputOtp';
+import { BrnLabelModule } from 'grg-ui-ui/brain/label';
 import {
   BrnMenuItemImports,
   BrnMenuBarImports,
@@ -58,65 +58,65 @@ import {
   BrnMenuModule,
   BrnMenuBarModule,
   BrnContextMenuModule
-} from '@spartan-ng/brain/menu';
-import { BrnPopoverModule } from '@spartan-ng/brain/popover';
-import { BrnProgressModule } from '@spartan-ng/brain/progress';
-import { BrnRadioGroupModule } from '@spartan-ng/brain/radioGroup';
-import { BrnSelectModule } from '@spartan-ng/brain/select';
-import { BrnSeparatorModule } from '@spartan-ng/brain/separator';
-import { BrnSheetModule } from '@spartan-ng/brain/sheet';
-import { BrnSwitchModule } from '@spartan-ng/brain/switch';
-import { BrnTabsModule } from '@spartan-ng/brain/tabs';
-import { BrnToggleModule } from '@spartan-ng/brain/toggle';
+} from 'grg-ui-ui/brain/menu';
+import { BrnPopoverModule } from 'grg-ui-ui/brain/popover';
+import { BrnProgressModule } from 'grg-ui-ui/brain/progress';
+import { BrnRadioGroupModule } from 'grg-ui-ui/brain/radioGroup';
+import { BrnSelectModule } from 'grg-ui-ui/brain/select';
+import { BrnSeparatorModule } from 'grg-ui-ui/brain/separator';
+import { BrnSheetModule } from 'grg-ui-ui/brain/sheet';
+import { BrnSwitchModule } from 'grg-ui-ui/brain/switch';
+import { BrnTabsModule } from 'grg-ui-ui/brain/tabs';
+import { BrnToggleModule } from 'grg-ui-ui/brain/toggle';
 import {
   BrnToggleGroupModule,
   BrnToggleGroupItemModule
-} from '@spartan-ng/brain/toggleGroup';
-import { BrnTooltipModule } from '@spartan-ng/brain/tooltip';
+} from 'grg-ui-ui/brain/toggleGroup';
+import { BrnTooltipModule } from 'grg-ui-ui/brain/tooltip';
 
 // --- HLM imports ---
-import { HlmAccordionModule } from '@spartan-ng/helm/accordion';
-import { HlmAlertModule } from '@spartan-ng/helm/alert';
-import { HlmAlertDialogModule } from '@spartan-ng/helm/alertDialog';
-import { HlmAspectRatioModule } from '@spartan-ng/helm/aspectRatio';
-import { HlmAutocompleteModule } from '@spartan-ng/helm/autocomplete';
-import { HlmAvatarModule } from '@spartan-ng/helm/avatar';
-import { HlmBadgeModule } from '@spartan-ng/helm/badge';
-import { HlmBreadCrumbModule } from '@spartan-ng/helm/breadCrumb';
-import { HlmButtonModule } from '@spartan-ng/helm/button';
-import { HlmCalendarModule } from '@spartan-ng/helm/calendar';
-import { HlmCardModule } from '@spartan-ng/helm/card';
-import { HlmCarouselModule } from '@spartan-ng/helm/carousel';
-import { HlmCheckboxModule } from '@spartan-ng/helm/checkbox';
-import { HlmCommandModule } from '@spartan-ng/helm/command';
-import { HlmDatePickerModule } from '@spartan-ng/helm/datePicker';
-import { HlmDialogModule } from '@spartan-ng/helm/dialog';
-import { HlmFormFieldModule } from '@spartan-ng/helm/formField';
-import { HlmHoverCardModule } from '@spartan-ng/helm/hoverCard';
-import { HlmIconModule } from '@spartan-ng/helm/icon';
-import { HlmInputModule } from '@spartan-ng/helm/input';
-import { HlmInputOtpModule } from '@spartan-ng/helm/inputOtp';
-import { HlmLabelModule } from '@spartan-ng/helm/label';
-import { HlmMenuModule, HlmMenuItemModule, HlmMenuBarModule } from '@spartan-ng/helm/menu';
-import { HlmPaginationModule } from '@spartan-ng/helm/pagination';
-import { HlmPopoverModule } from '@spartan-ng/helm/popover';
-import { HlmProgressModule } from '@spartan-ng/helm/progress';
-import { HlmRadioGroupModule } from '@spartan-ng/helm/radioGroup';
-import { HlmScrollAreaModule } from '@spartan-ng/helm/scrollArea';
-import { HlmSelectModule } from '@spartan-ng/helm/select';
-import { HlmSeparatorModule } from '@spartan-ng/helm/separator';
-import { HlmSheetModule } from '@spartan-ng/helm/sheet';
-import { HlmSidebarModule } from '@spartan-ng/helm/sidebar';
-import { HlmSkeletonModule } from '@spartan-ng/helm/skeleton';
-import { HlmSliderModule } from '@spartan-ng/helm/slider';
-import { HlmToasterModule } from '@spartan-ng/helm/toaster';
-import { HlmSpinnerModule } from '@spartan-ng/helm/spinner';
-import { HlmSwitchModule } from '@spartan-ng/helm/switch';
-import { HlmTableModule } from '@spartan-ng/helm/table';
-import { HlmTabsModule } from '@spartan-ng/helm/tabs';
-import { HlmToggleModule } from '@spartan-ng/helm/toggle';
-import { HlmToggleGroupModule } from '@spartan-ng/helm/toggleGroup';
-import { HlmTooltipModule } from '@spartan-ng/helm/tooltip';
+import { HlmAccordionModule } from 'grg-ui-ui/helm/accordion';
+import { HlmAlertModule } from 'grg-ui-ui/helm/alert';
+import { HlmAlertDialogModule } from 'grg-ui-ui/helm/alertDialog';
+import { HlmAspectRatioModule } from 'grg-ui-ui/helm/aspectRatio';
+import { HlmAutocompleteModule } from 'grg-ui-ui/helm/autocomplete';
+import { HlmAvatarModule } from 'grg-ui-ui/helm/avatar';
+import { HlmBadgeModule } from 'grg-ui-ui/helm/badge';
+import { HlmBreadCrumbModule } from 'grg-ui-ui/helm/breadCrumb';
+import { HlmButtonModule } from 'grg-ui-ui/helm/button';
+import { HlmCalendarModule } from 'grg-ui-ui/helm/calendar';
+import { HlmCardModule } from 'grg-ui-ui/helm/card';
+import { HlmCarouselModule } from 'grg-ui-ui/helm/carousel';
+import { HlmCheckboxModule } from 'grg-ui-ui/helm/checkbox';
+import { HlmCommandModule } from 'grg-ui-ui/helm/command';
+import { HlmDatePickerModule } from 'grg-ui-ui/helm/datePicker';
+import { HlmDialogModule } from 'grg-ui-ui/helm/dialog';
+import { HlmFormFieldModule } from 'grg-ui-ui/helm/formField';
+import { HlmHoverCardModule } from 'grg-ui-ui/helm/hoverCard';
+import { HlmIconModule } from 'grg-ui-ui/helm/icon';
+import { HlmInputModule } from 'grg-ui-ui/helm/input';
+import { HlmInputOtpModule } from 'grg-ui-ui/helm/inputOtp';
+import { HlmLabelModule } from 'grg-ui-ui/helm/label';
+import { HlmMenuModule, HlmMenuItemModule, HlmMenuBarModule } from 'grg-ui-ui/helm/menu';
+import { HlmPaginationModule } from 'grg-ui-ui/helm/pagination';
+import { HlmPopoverModule } from 'grg-ui-ui/helm/popover';
+import { HlmProgressModule } from 'grg-ui-ui/helm/progress';
+import { HlmRadioGroupModule } from 'grg-ui-ui/helm/radioGroup';
+import { HlmScrollAreaModule } from 'grg-ui-ui/helm/scrollArea';
+import { HlmSelectModule } from 'grg-ui-ui/helm/select';
+import { HlmSeparatorModule } from 'grg-ui-ui/helm/separator';
+import { HlmSheetModule } from 'grg-ui-ui/helm/sheet';
+import { HlmSidebarModule } from 'grg-ui-ui/helm/sidebar';
+import { HlmSkeletonModule } from 'grg-ui-ui/helm/skeleton';
+import { HlmSliderModule } from 'grg-ui-ui/helm/slider';
+import { HlmToasterModule } from 'grg-ui-ui/helm/toaster';
+import { HlmSpinnerModule } from 'grg-ui-ui/helm/spinner';
+import { HlmSwitchModule } from 'grg-ui-ui/helm/switch';
+import { HlmTableModule } from 'grg-ui-ui/helm/table';
+import { HlmTabsModule } from 'grg-ui-ui/helm/tabs';
+import { HlmToggleModule } from 'grg-ui-ui/helm/toggle';
+import { HlmToggleGroupModule } from 'grg-ui-ui/helm/toggleGroup';
+import { HlmTooltipModule } from 'grg-ui-ui/helm/tooltip';
 
 @Component({
   standalone: true,
@@ -224,9 +224,9 @@ export class HlmButtonModule {}
 		// add a file with legacy naming conventions
 		tree.write(
 			'libs/my-lib/src/legacy.component.ts',
-			`			import { HlmMenuItemRadioComponent } from '@spartan-ng/helm/menu';
-			import { BrnTooltipContentDirective } from '@spartan-ng/brain/tooltip';
-			import { BrnSelectValueDirective } from '@spartan-ng/brain/select';
+			`			import { HlmMenuItemRadioComponent } from 'grg-ui-ui/helm/menu';
+			import { BrnTooltipContentDirective } from 'grg-ui-ui/brain/tooltip';
+			import { BrnSelectValueDirective } from 'grg-ui-ui/brain/select';
 			`,
 		);
 
@@ -294,33 +294,33 @@ export class HlmButtonModule {}
 	it('should update to latest dependencies', () => {
 		const packageJson = readJson(tree, 'package.json');
 
-		expect(packageJson.dependencies['@spartan-ng/brain']).not.toEqual('0.0.1-alpha.300');
-		expect(packageJson.devDependencies['@spartan-ng/cli']).not.toEqual('0.0.1-alpha.300');
+		expect(packageJson.dependencies['grg-ui-ui/brain']).not.toEqual('0.0.1-alpha.300');
+		expect(packageJson.devDependencies['grg-ui-ui/cli']).not.toEqual('0.0.1-alpha.300');
 	});
 
 	it('should update brain imports', () => {
 		const contents = tree.read('libs/my-lib/src/index.ts', 'utf-8');
 
-		expect(contents).not.toContain('@spartan-ng/ui-checkbox-brain');
-		expect(contents).toContain('@spartan-ng/brain/checkbox');
+		expect(contents).not.toContain('grg-ui-ui/ui-checkbox-brain');
+		expect(contents).toContain('grg-ui-ui/brain/checkbox');
 
 		// check if package.json was updated
 		const packageJson = readJson(tree, 'package.json');
-		expect(packageJson.dependencies['@spartan-ng/ui-checkbox-brain']).toBeUndefined();
+		expect(packageJson.dependencies['grg-ui-ui/ui-checkbox-brain']).toBeUndefined();
 	});
 
 	it('should update core imports', () => {
 		const contents = tree.read('libs/my-lib/src/index.ts', 'utf-8');
 
-		expect(contents).not.toContain('@spartan-ng/ui-core');
-		expect(contents).toContain('@spartan-ng/brain/core');
+		expect(contents).not.toContain('grg-ui-ui/ui-core');
+		expect(contents).toContain('grg-ui-ui/brain/core');
 	});
 
 	it('should update helm imports', () => {
 		const contents = tree.read('libs/my-lib/src/index.ts', 'utf-8');
 
-		expect(contents).not.toContain('@spartan-ng/ui-button-helm');
-		expect(contents).toContain('@spartan-ng/helm/button');
+		expect(contents).not.toContain('grg-ui-ui/ui-button-helm');
+		expect(contents).toContain('grg-ui-ui/helm/button');
 	});
 
 	it('should update helm icons', () => {
@@ -394,7 +394,7 @@ export class HlmButtonModule {}
 		expect(contents).toContain('export class HlmButtonModule');
 		expect(contents).not.toContain('export class HlmButtonImports');
 		// should only import every import once in the import from
-		const importStatements = contents.match(/import {([^}]+)} from '@spartan-ng\/(brain|helm)\/[^']+';/g) || [];
+		const importStatements = contents.match(/import {([^}]+)} from 'grg-ui-ui\/(brain|helm)\/[^']+';/g) || [];
 
 		const allImports = importStatements.flatMap((statement) => statement.match(/(Brn|Hlm)\w+/g) || []);
 

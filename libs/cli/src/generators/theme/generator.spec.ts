@@ -46,7 +46,7 @@ describe('Theme generator', () => {
 		const project = readProjectConfiguration(tree, 'website');
 		await addThemeToApplicationStyles(tree, { theme: 'zinc', project: 'website', addCdkStyles: true }, project);
 		const styles = tree.read('website/src/styles.css', 'utf8');
-		expect(styles).toContain('@import "@spartan-ng/brain/hlm-tailwind-preset.css";');
+		expect(styles).toContain('@import "grg-ui-ui/brain/hlm-tailwind-preset.css";');
 	});
 
 	it('should add the neutral theme styles to the global stylesheet', async () => {

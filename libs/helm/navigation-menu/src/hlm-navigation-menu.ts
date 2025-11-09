@@ -1,6 +1,6 @@
 import { computed, Directive, input } from '@angular/core';
-import { BrnNavigationMenu } from '@spartan-ng/brain/navigation-menu';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnNavigationMenu } from 'grg-ui-ui/brain/navigation-menu';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { ClassValue } from 'clsx';
 
 @Directive({

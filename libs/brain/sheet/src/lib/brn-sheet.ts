@@ -8,7 +8,7 @@ import {
 	untracked,
 	ViewEncapsulation,
 } from '@angular/core';
-import { BrnDialog } from '@spartan-ng/brain/dialog';
+import { BrnDialog } from 'grg-ui-ui/brain/dialog';
 
 @Component({
 	selector: 'brn-sheet',

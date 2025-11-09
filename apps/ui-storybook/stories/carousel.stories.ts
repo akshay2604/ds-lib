@@ -1,7 +1,7 @@
 import { argsToTemplate, type Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 
-import { HlmCard, HlmCardContent } from '@spartan-ng/helm/card';
-import { HlmCarousel, HlmCarouselImports } from '@spartan-ng/helm/carousel';
+import { HlmCard, HlmCardContent } from 'grg-ui-ui/helm/card';
+import { HlmCarousel, HlmCarouselImports } from 'grg-ui-ui/helm/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 
 const meta: Meta<HlmCarousel> = {

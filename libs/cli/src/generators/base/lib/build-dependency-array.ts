@@ -10,7 +10,7 @@ export function buildDependencyArray(
 ) {
 	let dependencies: Record<string, string> = {
 		'@angular/cdk': existingCdkVersion ?? angularVersion,
-		'@spartan-ng/brain': SPARTAN_BRAIN_VERSION,
+		'grg-ui-ui/brain': SPARTAN_BRAIN_VERSION,
 		'tailwind-merge': TAILWIND_MERGE_VERSION,
 	};
 

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BrnMenuGroup } from '@spartan-ng/brain/menu';
+import { BrnMenuGroup } from 'grg-ui-ui/brain/menu';
 
 @Component({
 	selector: 'hlm-menu-group',

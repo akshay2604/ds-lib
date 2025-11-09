@@ -12,7 +12,7 @@ import {
 	untracked,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { BrnPopover } from '@spartan-ng/brain/popover';
+import { BrnPopover } from 'grg-ui-ui/brain/popover';
 import type { BrnAutocompleteItem } from './brn-autocomplete-item';
 import { BrnAutocompleteItemToken } from './brn-autocomplete-item.token';
 import { provideBrnAutocomplete } from './brn-autocomplete.token';

@@ -23,14 +23,14 @@ async function ensureHelmUtilsInstalled(tree: Tree, angularCli: boolean) {
 			: null;
 
 	if (!tsconfigPath) {
-		throw new Error('Could not find tsconfig.base.json or tsconfig.json to verify @spartan-ng/helm/utils.');
+		throw new Error('Could not find tsconfig.base.json or tsconfig.json to verify grg-ui-ui/helm/utils.');
 	}
 
 	const tsconfig = JSON.parse(tree.read(tsconfigPath, 'utf-8') || '{}');
 
-	// Check compilerOptions.paths for @spartan-ng/helm/utils
+	// Check compilerOptions.paths for grg-ui-ui/helm/utils
 	const paths = tsconfig.compilerOptions?.paths || {};
-	const hasHelmUtils = Object.keys(paths).some((pkg) => pkg === '@spartan-ng/helm/utils');
+	const hasHelmUtils = Object.keys(paths).some((pkg) => pkg === 'grg-ui-ui/helm/utils');
 
 	if (!hasHelmUtils) {
 		const supportedLibraries = (await import('../ui/supported-ui-libraries.json').then(
@@ -58,8 +58,8 @@ function replaceHlmImport(tree: Tree) {
 		let content = tree.read(path, 'utf-8');
 		if (!content) return;
 
-		// Find imports from @spartan-ng/brain/core
-		const importRegex = /import\s*{\s*([^}]*)\s*}\s*from\s*['"]@spartan-ng\/brain\/core['"];?/g;
+		// Find imports from grg-ui-ui/brain/core
+		const importRegex = /import\s*{\s*([^}]*)\s*}\s*from\s*['"]grg-ui-ui\/brain\/core['"];?/g;
 
 		content = content.replace(importRegex, (match, imports) => {
 			// Split the import specifiers
@@ -78,11 +78,11 @@ function replaceHlmImport(tree: Tree) {
 
 			let newImports = '';
 			if (remaining.length > 0) {
-				newImports = `import { ${remaining.join(', ')} } from '@spartan-ng/brain/core';\n`;
+				newImports = `import { ${remaining.join(', ')} } from 'grg-ui-ui/brain/core';\n`;
 			}
 
 			// Always add hlm import from new package
-			newImports += `import { hlm } from '@spartan-ng/helm/utils';`;
+			newImports += `import { hlm } from 'grg-ui-ui/helm/utils';`;
 
 			return newImports;
 		});

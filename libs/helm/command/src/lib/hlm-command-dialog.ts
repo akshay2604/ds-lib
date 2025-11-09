@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Renderer2, computed, contentChild, effect, inject, input, signal } from '@angular/core';
-import { BrnCommandSearchInputToken } from '@spartan-ng/brain/command';
-import { injectExposesStateProvider } from '@spartan-ng/brain/core';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnCommandSearchInputToken } from 'grg-ui-ui/brain/command';
+import { injectExposesStateProvider } from 'grg-ui-ui/brain/core';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Directive({

@@ -3,8 +3,8 @@ import {
 	type ExposesSide,
 	provideExposedSideProviderExisting,
 	provideExposesStateProviderExisting,
-} from '@spartan-ng/brain/core';
-import { BrnDialogContent } from '@spartan-ng/brain/dialog';
+} from 'grg-ui-ui/brain/core';
+import { BrnDialogContent } from 'grg-ui-ui/brain/dialog';
 import { BrnSheet } from './brn-sheet';
 
 @Directive({

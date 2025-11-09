@@ -14,7 +14,7 @@ import {
 	model,
 	numberAttribute,
 } from '@angular/core';
-import { injectDateAdapter } from '@spartan-ng/brain/date-time';
+import { injectDateAdapter } from 'grg-ui-ui/brain/date-time';
 import { BrnCalendarCellButton } from './brn-calendar-cell-button';
 import { BrnCalendarHeader } from './brn-calendar-header';
 import { type BrnCalendarBase, provideBrnCalendar } from './brn-calendar.token';

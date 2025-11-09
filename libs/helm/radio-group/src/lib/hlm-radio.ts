@@ -12,8 +12,8 @@ import {
 	PLATFORM_ID,
 	Renderer2,
 } from '@angular/core';
-import { BrnRadio, type BrnRadioChange } from '@spartan-ng/brain/radio-group';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnRadio, type BrnRadioChange } from 'grg-ui-ui/brain/radio-group';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import type { ClassValue } from 'clsx';
 
 @Component({

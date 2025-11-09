@@ -1,4 +1,4 @@
-import { HlmCalendar } from '@spartan-ng/helm/calendar';
+import { HlmCalendar } from 'grg-ui-ui/helm/calendar';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmCalendar<Date>> = {

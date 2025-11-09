@@ -17,9 +17,9 @@ export const coreImportsHealthcheck: Healthcheck = {
 				return;
 			}
 
-			if (contents.includes('@spartan-ng/ui-core')) {
+			if (contents.includes('grg-ui-ui/ui-core')) {
 				failure(
-					`The import @spartan-ng/ui-core is deprecated. Please use the @spartan-ng/brain/core package instead.`,
+					`The import grg-ui-ui/ui-core is deprecated. Please use the grg-ui-ui/brain/core package instead.`,
 					HealthcheckSeverity.Error,
 					true,
 				);

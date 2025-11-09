@@ -40,8 +40,8 @@ describe('migrate-radio generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';
-			import { HlmRadioDirective, HlmRadioGroupComponent } from '@spartan-ng/ui-radiogroup-helm';
+			import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';
+			import { HlmRadioDirective, HlmRadioGroupComponent } from 'grg-ui-ui/ui-radiogroup-helm';
 
 			@NgModule({
 				imports: [BrowserModule, BrnRadioComponent, HlmRadioDirective, HlmRadioGroupComponent],
@@ -53,9 +53,9 @@ describe('migrate-radio generator', () => {
 		await migrateRadioGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.module.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';`);
+		expect(content).not.toContain(`import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';`);
 		expect(content).toContain(
-			`import { HlmRadioComponent, HlmRadioGroupComponent } from '@spartan-ng/ui-radiogroup-helm';`,
+			`import { HlmRadioComponent, HlmRadioGroupComponent } from 'grg-ui-ui/ui-radiogroup-helm';`,
 		);
 		expect(content).toContain(`imports: [BrowserModule, HlmRadioComponent, HlmRadioGroupComponent],`);
 	});
@@ -65,8 +65,8 @@ describe('migrate-radio generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';
-				import { HlmRadioDirective, HlmRadioGroupComponent } from '@spartan-ng/ui-radiogroup-helm';
+				import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';
+				import { HlmRadioDirective, HlmRadioGroupComponent } from 'grg-ui-ui/ui-radiogroup-helm';
 				@Component({
 					imports: [BrnRadioComponent, HlmRadioDirective, HlmRadioGroupComponent],
 					template: \`
@@ -84,9 +84,9 @@ describe('migrate-radio generator', () => {
 		await migrateRadioGenerator(tree, { skipFormat: true });
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).not.toContain(`import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';`);
+		expect(content).not.toContain(`import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';`);
 		expect(content).toContain(
-			`import { HlmRadioComponent, HlmRadioGroupComponent } from '@spartan-ng/ui-radiogroup-helm';`,
+			`import { HlmRadioComponent, HlmRadioGroupComponent } from 'grg-ui-ui/ui-radiogroup-helm';`,
 		);
 		expect(content).toContain(`imports: [HlmRadioComponent, HlmRadioGroupComponent],`);
 		expect(content).toContain(`<hlm-radio value="16.1.4">`);
@@ -96,8 +96,8 @@ describe('migrate-radio generator', () => {
 			'app/src/app/app.component.ts',
 			`
 				import { Component } from '@angular/core';
-				import { BrnRadioComponent } from '@spartan-ng/brain/radio-group';
-				import { HlmRadioDirective, HlmRadioGroupComponent } from '@spartan-ng/ui-radiogroup-helm';
+				import { BrnRadioComponent } from 'grg-ui-ui/brain/radio-group';
+				import { HlmRadioDirective, HlmRadioGroupComponent } from 'grg-ui-ui/ui-radiogroup-helm';
 
 				@Component({
 					imports: [BrnRadioComponent, HlmRadioDirective, HlmRadioGroupComponent],

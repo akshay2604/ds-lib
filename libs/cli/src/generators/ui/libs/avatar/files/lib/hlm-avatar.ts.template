@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, input } from '@angular/core';
-import { BrnAvatar } from '@spartan-ng/brain/avatar';
+import { BrnAvatar } from 'grg-ui-ui/brain/avatar';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

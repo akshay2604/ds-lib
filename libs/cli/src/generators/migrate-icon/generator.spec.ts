@@ -40,7 +40,7 @@ describe('migrate-icon generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { HlmIconModule } from '@spartan-ng/ui-icon-helm';
+			import { HlmIconModule } from 'grg-ui-ui/ui-icon-helm';
 
 			@NgModule({
 				imports: [BrowserModule, HlmIconModule],
@@ -62,7 +62,7 @@ describe('migrate-icon generator', () => {
 			`
 			import { NgModule } from '@angular/core';
 			import { BrowserModule } from '@angular/platform-browser';
-			import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+			import { HlmIconComponent } from 'grg-ui-ui/ui-icon-helm';
 
 			@NgModule({
 				imports: [BrowserModule, HlmIconComponent],
@@ -83,7 +83,7 @@ describe('migrate-icon generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { HlmIconModule } from '@spartan-ng/ui-icon-helm';
+			import { HlmIconModule } from 'grg-ui-ui/ui-icon-helm';
 
 			@Component({
 				imports: [HlmIconModule],
@@ -109,7 +109,7 @@ describe('migrate-icon generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+			import { HlmIconComponent } from 'grg-ui-ui/ui-icon-helm';
 
 			@Component({
 				imports: [HlmIconComponent],
@@ -126,7 +126,7 @@ describe('migrate-icon generator', () => {
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
 		expect(content).toContain(`import { NgIcon } from '@ng-icons/core';`);
-		expect(content).toContain(`import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';`);
+		expect(content).toContain(`import { HlmIconDirective } from 'grg-ui-ui/ui-icon-helm';`);
 		expect(content).toContain(`imports: [NgIcon, HlmIconDirective],`);
 		expect(content).toContain(`<ng-icon hlm size='xl' name="lucideChevronRight" />`);
 	});
@@ -136,7 +136,7 @@ describe('migrate-icon generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { provideIcons } from '@spartan-ng/ui-icon-helm';
+			import { provideIcons } from 'grg-ui-ui/ui-icon-helm';
 			import { lucideChevronRight } from '@ng-icons/lucide';
 
 			@Component({

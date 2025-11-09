@@ -4,9 +4,9 @@ import { ChangeDetectionStrategy, Component, computed, inject, input } from '@an
 
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideGripVertical } from '@ng-icons/lucide';
-import { BrnResizableHandle } from '@spartan-ng/brain/resizable';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnResizableHandle } from 'grg-ui-ui/brain/resizable';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { hlm } from 'grg-ui-ui/helm/utils';
 
 @Component({
 	selector: 'hlm-resizable-handle',

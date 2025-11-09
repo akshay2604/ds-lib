@@ -1,6 +1,6 @@
-import { BrnAlertDialogImports } from '@spartan-ng/brain/alert-dialog';
-import { HlmAlertDialog, HlmAlertDialogImports } from '@spartan-ng/helm/alert-dialog';
-import { HlmButton } from '@spartan-ng/helm/button';
+import { BrnAlertDialogImports } from 'grg-ui-ui/brain/alert-dialog';
+import { HlmAlertDialog, HlmAlertDialogImports } from 'grg-ui-ui/helm/alert-dialog';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 import { type Meta, type StoryObj, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmAlertDialog> = {

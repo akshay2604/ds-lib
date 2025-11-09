@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { HlmButton, provideBrnButtonConfig } from '@spartan-ng/helm/button';
+import { HlmButton, provideBrnButtonConfig } from 'grg-ui-ui/helm/button';
 
 @Directive({
 	selector: 'button[hlmAlertDialogCancel]',

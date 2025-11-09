@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import * as lucide from '@ng-icons/lucide';
-import { BrnCommandImports } from '@spartan-ng/brain/command';
-import { BrnPopoverImports } from '@spartan-ng/brain/popover';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmCommandImports } from '@spartan-ng/helm/command';
-import { HlmIcon } from '@spartan-ng/helm/icon';
-import { HlmPopoverContent } from '@spartan-ng/helm/popover';
+import { BrnCommandImports } from 'grg-ui-ui/brain/command';
+import { BrnPopoverImports } from 'grg-ui-ui/brain/popover';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmCommandImports } from 'grg-ui-ui/helm/command';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
+import { HlmPopoverContent } from 'grg-ui-ui/helm/popover';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

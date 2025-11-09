@@ -28,20 +28,20 @@ function ensureBrainPackageIsInstalled(tree: Tree) {
 	const deps = { ...packageJson.dependencies, ...packageJson.devDependencies };
 
 	// check if the brain package is installed
-	if (deps['@spartan-ng/brain']) {
+	if (deps['grg-ui-ui/brain']) {
 		return;
 	}
 
 	// the brain package version should be the same as the cli package
 	updateJson<PackageJson>(tree, 'package.json', (packageJson) => {
-		packageJson.dependencies['@spartan-ng/brain'] = deps['@spartan-ng/cli'];
+		packageJson.dependencies['grg-ui-ui/brain'] = deps['grg-ui-ui/cli'];
 		return packageJson;
 	});
 
 	const { install } = getPackageManagerCommand();
 
 	logger.warn(
-		`The @spartan-ng/brain package has been added to your dependencies. Please run '${install}' to install the package.`,
+		`The grg-ui-ui/brain package has been added to your dependencies. Please run '${install}' to install the package.`,
 	);
 }
 

@@ -57,7 +57,7 @@ jobs:
         uses: wagoid/commitlint-github-action@v5
         with:
           failOnWarnings: true
-          helpURL: https://github.com/goetzrobin/spartan/blob/main/CONTRIBUTING.md#-commit-message-guidelines
+          helpURL: https://github.com/goetzrobin/grg-ui/blob/main/CONTRIBUTING.md#-commit-message-guidelines
 
   format-and-lint:
     needs: check_date
@@ -134,7 +134,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Leonidas
-          author_email: leonidas@spartan.ng
+          author_email: leonidasgrg-ui.ng
           message: 'chore: nightly release ${{steps.datetime.outputs.release_date}} ⚡'
       - name: Release
         run: pnpm run release

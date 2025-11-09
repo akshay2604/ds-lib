@@ -1,6 +1,6 @@
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideFileX, lucideInbox, lucideSearch, lucideWifi } from '@ng-icons/lucide';
-import { HlmButton } from '@spartan-ng/helm/button';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 import {
 	HlmEmpty,
 	HlmEmptyContent,
@@ -8,8 +8,8 @@ import {
 	HlmEmptyHeader,
 	HlmEmptyMedia,
 	HlmEmptyTitle,
-} from '@spartan-ng/helm/empty';
-import { HlmIcon } from '@spartan-ng/helm/icon';
+} from 'grg-ui-ui/helm/empty';
+import { HlmIcon } from 'grg-ui-ui/helm/icon';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

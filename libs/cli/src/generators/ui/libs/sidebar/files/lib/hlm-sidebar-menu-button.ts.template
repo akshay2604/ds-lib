@@ -1,5 +1,5 @@
 import { booleanAttribute, computed, Directive, inject, input } from '@angular/core';
-import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from '@spartan-ng/brain/tooltip';
+import { BrnTooltipTrigger, provideBrnTooltipDefaultOptions } from 'grg-ui-ui/brain/tooltip';
 import { DEFAULT_TOOLTIP_CONTENT_CLASSES } from '<%- importAlias %>/tooltip';
 import { hlm } from '<%- importAlias %>/utils';
 import { cva } from 'class-variance-authority';

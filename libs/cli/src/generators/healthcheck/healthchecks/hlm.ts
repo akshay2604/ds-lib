@@ -16,10 +16,10 @@ export const hlmImportHealthcheck: Healthcheck = {
 				return;
 			}
 
-			// If any import from @spartan-ng/brain/core contains hlm
-			if (/import\s*{[^}]*\bhlm\b[^}]*}\s*from\s*['"]@spartan-ng\/brain\/core['"]/.test(contents)) {
+			// If any import from grg-ui-ui/brain/core contains hlm
+			if (/import\s*{[^}]*\bhlm\b[^}]*}\s*from\s*['"]grg-ui-ui\/brain\/core['"]/.test(contents)) {
 				failure(
-					`The { hlm } import from '@spartan-ng/brain/core' is deprecated; import it from '@spartan-ng/helm/utils' instead.`,
+					`The { hlm } import from 'grg-ui-ui/brain/core' is deprecated; import it from 'grg-ui-ui/helm/utils' instead.`,
 					HealthcheckSeverity.Error,
 					true,
 				);

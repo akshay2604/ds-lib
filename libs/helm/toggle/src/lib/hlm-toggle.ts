@@ -1,6 +1,6 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnToggle } from '@spartan-ng/brain/toggle';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnToggle } from 'grg-ui-ui/brain/toggle';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 

@@ -76,10 +76,10 @@ function updateImports(tree: Tree) {
 
 		const content = tree.read(path).toString('utf-8');
 
-		if (content.includes('@spartan-ng/brain/separator') || content.includes('@spartan-ng/ui-separator-helm')) {
+		if (content.includes('grg-ui-ui/brain/separator') || content.includes('grg-ui-ui/ui-separator-helm')) {
 			const updatedContent = content
-				// Handle `import { BrnSeparator } from '@spartan-ng/brain/separator';`
-				.replace("import { BrnSeparator } from '@spartan-ng/brain/separator';", '')
+				// Handle `import { BrnSeparator } from 'grg-ui-ui/brain/separator';`
+				.replace("import { BrnSeparator } from 'grg-ui-ui/brain/separator';", '')
 				// Remove `BrnSeparator` with optional comma and whitespace
 				.replace(/BrnSeparator,?\s?/, '');
 

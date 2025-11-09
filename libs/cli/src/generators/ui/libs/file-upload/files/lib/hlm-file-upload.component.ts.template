@@ -15,7 +15,7 @@ import {
 	BrnFileUploadList,
 	type FileUploadFile,
 	type FileUploadValidation,
-} from '@spartan-ng/brain/file-upload';
+} from 'grg-ui-ui/brain/file-upload';
 import { hlm } from '<%- importAlias %>/utils';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';

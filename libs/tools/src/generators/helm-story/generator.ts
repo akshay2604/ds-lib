@@ -21,7 +21,7 @@ export async function helmStoryGenerator(tree: Tree, options: HelmStoryGenerator
 		fileName: names(options.componentName).fileName,
 		componentName: options.componentName,
 		componentImports,
-		importPath: `@spartan-ng/helm/${options.entrypoint}`,
+		importPath: `grg-ui-ui/helm/${options.entrypoint}`,
 		storyName,
 	});
 

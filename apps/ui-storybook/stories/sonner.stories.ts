@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HlmButton } from '@spartan-ng/helm/button';
-import { HlmToaster } from '@spartan-ng/helm/sonner';
+import { HlmButton } from 'grg-ui-ui/helm/button';
+import { HlmToaster } from 'grg-ui-ui/helm/sonner';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 import { toast } from 'ngx-sonner';

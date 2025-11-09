@@ -12,9 +12,9 @@ import {
 	untracked,
 } from '@angular/core';
 import { FormGroupDirective, NgControl, NgForm } from '@angular/forms';
-import { BrnFormFieldControl } from '@spartan-ng/brain/form-field';
-import { ErrorStateMatcher, ErrorStateTracker } from '@spartan-ng/brain/forms';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnFormFieldControl } from 'grg-ui-ui/brain/form-field';
+import { ErrorStateMatcher, ErrorStateTracker } from 'grg-ui-ui/brain/forms';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 

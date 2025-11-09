@@ -1,4 +1,4 @@
-# @spartan-ng/tools
+# grg-ui-ui/tools
 
 Internal development toolkit for the Spartan UI library ecosystem. Provides generators and executors for automating development workflows, managing releases, and maintaining codebase structure.
 
@@ -6,16 +6,16 @@ Internal development toolkit for the Spartan UI library ecosystem. Provides gene
 
 ```bash
 # Create new Helm component with story and docs
-nx g @spartan-ng/tools:helm-secondary-entrypoint --name=button --generate=component --story=true --documentation=true
+nx g grg-ui-ui/tools:helm-secondary-entrypoint --name=button --generate=component --story=true --documentation=true
 
 # Generate CLI generators from Helm libraries
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # Generate API documentation
 nx run tools:generate-ui-docs
 
 # Extract code snippets for documentation
-nx g @spartan-ng/tools:generate-primitive-snippets
+nx g grg-ui-ui/tools:generate-primitive-snippets
 ```
 
 ## Features

@@ -1,5 +1,5 @@
 import { RouterTestingModule } from '@angular/router/testing';
-import { HlmPagination, HlmPaginationImports } from '@spartan-ng/helm/pagination';
+import { HlmPagination, HlmPaginationImports } from 'grg-ui-ui/helm/pagination';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

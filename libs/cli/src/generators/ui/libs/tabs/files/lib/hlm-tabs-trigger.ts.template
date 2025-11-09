@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnTabsTrigger } from '@spartan-ng/brain/tabs';
+import { BrnTabsTrigger } from 'grg-ui-ui/brain/tabs';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

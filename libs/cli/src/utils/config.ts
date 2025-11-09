@@ -12,7 +12,7 @@ export const ConfigSchema = z.object({
 	importAlias: z
 		.string()
 		.optional()
-		.default('@spartan-ng/helm')
+		.default('grg-ui-ui/helm')
 		.refine((val) => !val.endsWith('/'), { message: 'importAlias should not end with a slash' }),
 });
 
@@ -60,7 +60,7 @@ export async function getOrCreateConfig(tree: Tree, defaults?: Partial<Config>):
 			type: 'input',
 			required: true,
 			name: 'componentsPath',
-			message: 'Choose a directory to place your spartan libraries, e.g. libs/ui',
+			message: 'Choose a directory to place your grg-ui libraries, e.g. libs/ui',
 			initial: defaults?.componentsPath ?? 'libs/ui',
 			skip: !!defaults?.componentsPath,
 		},
@@ -83,7 +83,7 @@ export async function getOrCreateConfig(tree: Tree, defaults?: Partial<Config>):
 			type: 'input',
 			name: 'importAlias',
 			message: 'What import alias should be used for the components?',
-			initial: defaults?.importAlias ?? '@spartan-ng/helm',
+			initial: defaults?.importAlias ?? 'grg-ui-ui/helm',
 			skip: !!defaults?.importAlias,
 		},
 	])) as { componentsPath: string; buildable: boolean; generateAs: GenerateAs; importAlias: string };

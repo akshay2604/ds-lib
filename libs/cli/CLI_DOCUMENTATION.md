@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **@spartan-ng/cli** is a powerful Nx plugin and Angular CLI schematic collection that provides code generation capabilities for the Spartan UI library. It enables developers to easily add UI components, themes, and perform migrations in Angular applications using the Spartan design system.
+The **grg-ui-ui/cli** is a powerful Nx plugin and Angular CLI schematic collection that provides code generation capabilities for the Spartan UI library. It enables developers to easily add UI components, themes, and perform migrations in Angular applications using the Spartan design system.
 
 ## Table of Contents
 
@@ -27,10 +27,10 @@ The **@spartan-ng/cli** is a powerful Nx plugin and Angular CLI schematic collec
 
 ```bash
 # For Nx workspaces
-npm install @spartan-ng/cli
+npm install grg-ui-ui/cli
 
 # For Angular CLI projects
-ng add @spartan-ng/cli
+ng add grg-ui-ui/cli
 ```
 
 ## Configuration
@@ -42,7 +42,7 @@ The CLI uses a `components.json` configuration file in your workspace root to ma
   "componentsPath": "libs/ui",
   "buildable": true,
   "generateAs": "library",
-  "importAlias": "@spartan-ng/helm"
+  "importAlias": "grg-ui-ui/helm"
 }
 ```
 
@@ -53,7 +53,7 @@ The CLI uses a `components.json` configuration file in your workspace root to ma
 | `componentsPath` | string | `"libs/ui"` | Directory where UI libraries are placed |
 | `buildable` | boolean | `true` | Whether libraries should be buildable |
 | `generateAs` | `"library" \| "entrypoint"` | `"library"` | How components are generated |
-| `importAlias` | string | `"@spartan-ng/helm"` | Import alias for components |
+| `importAlias` | string | `"grg-ui-ui/helm"` | Import alias for components |
 
 ## Available Generators
 
@@ -64,10 +64,10 @@ Generates UI component libraries based on the Spartan design system.
 
 ```bash
 # Nx
-nx g @spartan-ng/cli:ui
+nx g grg-ui-ui/cli:ui
 
 # Angular CLI
-ng g @spartan-ng/cli:ui
+ng g grg-ui-ui/cli:ui
 ```
 
 **Features:**
@@ -89,10 +89,10 @@ Adds theme configuration to your application.
 
 ```bash
 # Nx
-nx g @spartan-ng/cli:ui-theme
+nx g grg-ui-ui/cli:ui-theme
 
 # Angular CLI
-ng g @spartan-ng/cli:ui-theme
+ng g grg-ui-ui/cli:ui-theme
 ```
 
 **Features:**
@@ -106,10 +106,10 @@ Runs diagnostics on your project to identify issues or outdated code.
 
 ```bash
 # Nx
-nx g @spartan-ng/cli:healthcheck
+nx g grg-ui-ui/cli:healthcheck
 
 # Angular CLI
-ng g @spartan-ng/cli:healthcheck
+ng g grg-ui-ui/cli:healthcheck
 ```
 
 ### Migration Generators
@@ -144,20 +144,20 @@ The CLI includes numerous migration generators to help upgrade and modernize you
 
 ```bash
 # Add specific component
-nx g @spartan-ng/cli:ui button
+nx g grg-ui-ui/cli:ui button
 
 # Add multiple components interactively
-nx g @spartan-ng/cli:ui
+nx g grg-ui-ui/cli:ui
 
 # Add all components
-nx g @spartan-ng/cli:ui --name=all
+nx g grg-ui-ui/cli:ui --name=all
 ```
 
 ### Configuring Themes
 
 ```bash
 # Add theme to application
-nx g @spartan-ng/cli:ui-theme
+nx g grg-ui-ui/cli:ui-theme
 
 # The generator will prompt for:
 # - Target application
@@ -170,20 +170,20 @@ nx g @spartan-ng/cli:ui-theme
 
 ```bash
 # Update imports to use secondary entrypoints
-nx g @spartan-ng/cli:migrate-brain-imports
+nx g grg-ui-ui/cli:migrate-brain-imports
 
 # Migrate component event handling
-nx g @spartan-ng/cli:migrate-brn-checkbox-changed-event
+nx g grg-ui-ui/cli:migrate-brn-checkbox-changed-event
 
 # Update naming conventions
-nx g @spartan-ng/cli:migrate-naming-conventions
+nx g grg-ui-ui/cli:migrate-naming-conventions
 ```
 
 ### Project Health Check
 
 ```bash
 # Run comprehensive project analysis
-nx g @spartan-ng/cli:healthcheck
+nx g grg-ui-ui/cli:healthcheck
 ```
 
 ## Architecture
@@ -251,7 +251,7 @@ export async function getOrCreateConfig(tree: Tree, defaults?: Partial<Config>):
     {
       type: 'input',
       name: 'componentsPath',
-      message: 'Choose a directory to place your spartan libraries',
+      message: 'Choose a directory to place your grg-ui libraries',
       initial: 'libs/ui'
     },
     // ... more prompts
@@ -405,7 +405,7 @@ Error: Peer dependency warnings
 
 Enable verbose logging:
 ```bash
-nx g @spartan-ng/cli:ui --verbose
+nx g grg-ui-ui/cli:ui --verbose
 ```
 
 ## Contributing
@@ -422,6 +422,6 @@ MIT License - see the [LICENSE](../../LICENSE) file for details.
 
 ## Support
 
-- [GitHub Issues](https://github.com/goetzrobin/spartan/issues)
+- [GitHub Issues](https://github.com/goetzrobin/grg-ui/issues)
 - [Discord Community](https://discord.gg/EqHnxQ4uQr)
-- [Documentation](https://spartan.ng)
+- [Documentation](https://grg-ui.ng)

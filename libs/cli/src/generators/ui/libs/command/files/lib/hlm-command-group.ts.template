@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnCommandGroup } from '@spartan-ng/brain/command';
+import { BrnCommandGroup } from 'grg-ui-ui/brain/command';
 import { hlm } from '<%- importAlias %>/utils';
 
 @Component({

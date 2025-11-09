@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { BrnTooltip } from '@spartan-ng/brain/tooltip';
+import { BrnTooltip } from 'grg-ui-ui/brain/tooltip';
 
 @Component({
 	selector: 'hlm-tooltip',

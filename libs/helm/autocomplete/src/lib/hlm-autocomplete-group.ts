@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnAutocompleteGroup } from '@spartan-ng/brain/autocomplete';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnAutocompleteGroup } from 'grg-ui-ui/brain/autocomplete';
+import { hlm } from 'grg-ui-ui/helm/utils';
 
 @Component({
 	selector: 'hlm-autocomplete-group',

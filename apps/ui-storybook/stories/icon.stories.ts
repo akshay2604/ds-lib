@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import * as lucide from '@ng-icons/lucide';
 import { lucideHouse } from '@ng-icons/lucide';
-import { HlmIcon, type IconSize } from '@spartan-ng/helm/icon';
+import { HlmIcon, type IconSize } from 'grg-ui-ui/helm/icon';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmIcon> = {

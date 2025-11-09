@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { BrnDialogClose } from '@spartan-ng/brain/dialog';
+import { BrnDialogClose } from 'grg-ui-ui/brain/dialog';
 
 @Directive({
 	selector: 'button[brnSheetClose]',

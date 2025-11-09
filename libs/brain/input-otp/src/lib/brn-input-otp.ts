@@ -13,7 +13,7 @@ import {
 	signal,
 } from '@angular/core';
 import { type ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
-import type { ChangeFn, TouchFn } from '@spartan-ng/brain/forms';
+import type { ChangeFn, TouchFn } from 'grg-ui-ui/brain/forms';
 import type { ClassValue } from 'clsx';
 import { provideBrnInputOtp } from './brn-input-otp.token';
 

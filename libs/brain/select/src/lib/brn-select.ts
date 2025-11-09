@@ -32,10 +32,10 @@ import {
 	type ExposesState,
 	provideExposedSideProviderExisting,
 	provideExposesStateProviderExisting,
-} from '@spartan-ng/brain/core';
-import { BrnFormFieldControl } from '@spartan-ng/brain/form-field';
-import { type ChangeFn, ErrorStateMatcher, ErrorStateTracker, type TouchFn } from '@spartan-ng/brain/forms';
-import { BrnLabel } from '@spartan-ng/brain/label';
+} from 'grg-ui-ui/brain/core';
+import { BrnFormFieldControl } from 'grg-ui-ui/brain/form-field';
+import { type ChangeFn, ErrorStateMatcher, ErrorStateTracker, type TouchFn } from 'grg-ui-ui/brain/forms';
+import { BrnLabel } from 'grg-ui-ui/brain/label';
 import { of, Subject } from 'rxjs';
 import { delay, map, switchMap } from 'rxjs/operators';
 import { BrnSelectContent } from './brn-select-content';

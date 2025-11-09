@@ -1,8 +1,8 @@
-# @spartan-ng/brain Documentation
+# grg-ui-ui/brain Documentation
 
 ## Overview
 
-The `@spartan-ng/brain` library is a comprehensive Angular UI component library that provides headless, accessible, and customizable components. It serves as the foundational layer for building modern Angular applications with a focus on accessibility, performance, and developer experience.
+The `grg-ui-ui/brain` library is a comprehensive Angular UI component library that provides headless, accessible, and customizable components. It serves as the foundational layer for building modern Angular applications with a focus on accessibility, performance, and developer experience.
 
 ## Architecture
 
@@ -49,7 +49,7 @@ libs/brain/
 
 ### Package Information
 
-- **Package Name**: `@spartan-ng/brain`
+- **Package Name**: `grg-ui-ui/brain`
 - **Version**: `0.0.1-alpha.542`
 - **Prefix**: `brn`
 - **Project Type**: Angular Library
@@ -248,19 +248,19 @@ Each component follows a consistent import pattern:
 
 ```typescript
 // Individual component import
-import { BrnButton } from '@spartan-ng/brain/button';
+import { BrnButton } from 'grg-ui-ui/brain/button';
 
 // Bulk imports for convenience
-import { BrnButtonImports } from '@spartan-ng/brain/button';
+import { BrnButtonImports } from 'grg-ui-ui/brain/button';
 ```
 
 ### Secondary Entry Points
 
 Components are organized as secondary entry points for optimal tree-shaking:
 
-- `@spartan-ng/brain/button`
-- `@spartan-ng/brain/dialog`
-- `@spartan-ng/brain/select`
+- `grg-ui-ui/brain/button`
+- `grg-ui-ui/brain/dialog`
+- `grg-ui-ui/brain/select`
 - etc.
 
 ### Directive-Based Architecture
@@ -310,7 +310,7 @@ The library uses Nx for build orchestration:
 ### Installation
 
 ```bash
-npm install @spartan-ng/brain
+npm install grg-ui-ui/brain
 ```
 
 ### Basic Setup
@@ -324,7 +324,7 @@ npm install @spartan-ng/brain
 ```javascript
 // tailwind.config.js
 module.exports = {
-  presets: [require('@spartan-ng/brain/hlm-tailwind-preset')],
+  presets: [require('grg-ui-ui/brain/hlm-tailwind-preset')],
   content: ['./src/**/*.{html,ts}'],
   // ... other config
 };
@@ -334,7 +334,7 @@ module.exports = {
 
 ```typescript
 // app.component.ts
-import { BrnButton } from '@spartan-ng/brain/button';
+import { BrnButton } from 'grg-ui-ui/brain/button';
 
 @Component({
   selector: 'app-root',

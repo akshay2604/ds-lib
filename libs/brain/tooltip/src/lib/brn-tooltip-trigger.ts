@@ -50,7 +50,7 @@ import {
 	untracked,
 	ViewContainerRef,
 } from '@angular/core';
-import { brnDevMode, computedPrevious } from '@spartan-ng/brain/core';
+import { brnDevMode, computedPrevious } from 'grg-ui-ui/brain/core';
 import { Subject } from 'rxjs';
 import { take, takeUntil } from 'rxjs/operators';
 import { BrnTooltip } from './brn-tooltip';

@@ -1,5 +1,5 @@
 import { Directive, computed, inject, input } from '@angular/core';
-import { BrnSelectLabel } from '@spartan-ng/brain/select';
+import { BrnSelectLabel } from 'grg-ui-ui/brain/select';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 import { HlmSelectContent } from './hlm-select-content';

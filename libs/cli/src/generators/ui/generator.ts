@@ -115,7 +115,7 @@ export async function createPrimitiveLibraries(
 				angularCli: options.angularCli,
 				buildable: options.buildable ?? config.buildable,
 				generateAs: options.generateAs ?? config.generateAs ?? 'library',
-				importAlias: options.importAlias ?? config.importAlias ?? `@spartan-ng/helm`,
+				importAlias: options.importAlias ?? config.importAlias ?? `grg-ui-ui/helm`,
 			} satisfies HlmBaseGeneratorSchema);
 		}),
 	);

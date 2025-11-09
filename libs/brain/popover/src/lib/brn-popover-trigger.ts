@@ -1,5 +1,5 @@
 import { Directive, effect, ElementRef, inject, input, untracked } from '@angular/core';
-import { BrnDialogTrigger } from '@spartan-ng/brain/dialog';
+import { BrnDialogTrigger } from 'grg-ui-ui/brain/dialog';
 import type { BrnPopover } from './brn-popover';
 
 @Directive({

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'spartan-<%= fileName %>-preview',
+	selector: 'grg-ui-<%= fileName %>-preview',
 imports: [
 
 	],
@@ -14,7 +14,7 @@ export class <%= previewComponentName %> {}
 export const defaultImports = `
 import {
 
-} from '@spartan-ng/helm/<%= fileName %>';
+} from 'grg-ui-ui/helm/<%= fileName %>';
 `;
 
 export const defaultSkeleton = `

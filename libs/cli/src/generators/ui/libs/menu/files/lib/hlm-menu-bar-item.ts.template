@@ -1,5 +1,5 @@
 import { Directive, computed, input } from '@angular/core';
-import { BrnMenuItem } from '@spartan-ng/brain/menu';
+import { BrnMenuItem } from 'grg-ui-ui/brain/menu';
 import { hlm } from '<%- importAlias %>/utils';
 import type { ClassValue } from 'clsx';
 

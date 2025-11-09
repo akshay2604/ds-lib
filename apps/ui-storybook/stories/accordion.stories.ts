@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideChevronDown } from '@ng-icons/lucide';
-import { BrnAccordion, BrnAccordionImports } from '@spartan-ng/brain/accordion';
-import { HlmAccordionImports } from '@spartan-ng/helm/accordion';
-import { HlmButtonImports } from '@spartan-ng/helm/button';
-import { HlmIcon, HlmIconImports } from '@spartan-ng/helm/icon';
-import { HlmInput } from '@spartan-ng/helm/input';
+import { BrnAccordion, BrnAccordionImports } from 'grg-ui-ui/brain/accordion';
+import { HlmAccordionImports } from 'grg-ui-ui/helm/accordion';
+import { HlmButtonImports } from 'grg-ui-ui/helm/button';
+import { HlmIcon, HlmIconImports } from 'grg-ui-ui/helm/icon';
+import { HlmInput } from 'grg-ui-ui/helm/input';
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
 

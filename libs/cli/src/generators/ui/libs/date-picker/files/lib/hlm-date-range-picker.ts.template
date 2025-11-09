@@ -14,9 +14,9 @@ import {
 import { type ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideChevronDown } from '@ng-icons/lucide';
-import type { BrnDialogState } from '@spartan-ng/brain/dialog';
-import type { ChangeFn, TouchFn } from '@spartan-ng/brain/forms';
-import { BrnPopover, BrnPopoverContent, BrnPopoverTrigger } from '@spartan-ng/brain/popover';
+import type { BrnDialogState } from 'grg-ui-ui/brain/dialog';
+import type { ChangeFn, TouchFn } from 'grg-ui-ui/brain/forms';
+import { BrnPopover, BrnPopoverContent, BrnPopoverTrigger } from 'grg-ui-ui/brain/popover';
 import { HlmCalendarRange } from '<%- importAlias %>/calendar';
 import { HlmIcon } from '<%- importAlias %>/icon';
 import { HlmPopoverContent } from '<%- importAlias %>/popover';

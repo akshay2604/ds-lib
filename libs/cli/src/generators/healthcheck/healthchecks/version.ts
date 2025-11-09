@@ -18,7 +18,7 @@ export const versionHealthcheck: Healthcheck = {
 		// merge the dependencies and devDependencies
 		const dependencies = { ...packageJson.dependencies, ...packageJson.devDependencies };
 
-		const dependenciesToCheck = ['@spartan-ng/brain', '@spartan-ng/cli'];
+		const dependenciesToCheck = ['grg-ui-ui/brain', 'grg-ui-ui/cli'];
 
 		for (const dep of dependenciesToCheck) {
 			if (!dependencies[dep]) {
@@ -51,7 +51,7 @@ export const versionHealthcheck: Healthcheck = {
 	fix: async (tree) => {
 		const packageJson = readJson(tree, 'package.json');
 		const dependencies = { ...packageJson.dependencies, ...packageJson.devDependencies };
-		const dependenciesToCheck = ['@spartan-ng/brain', '@spartan-ng/cli'];
+		const dependenciesToCheck = ['grg-ui-ui/brain', 'grg-ui-ui/cli'];
 
 		for (const dep of dependenciesToCheck) {
 			if (!dependencies[dep]) {

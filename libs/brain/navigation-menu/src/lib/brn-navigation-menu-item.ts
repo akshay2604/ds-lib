@@ -1,5 +1,5 @@
 import { computed, contentChild, Directive, ElementRef, inject, input, signal, TemplateRef } from '@angular/core';
-import { BrnButton } from '@spartan-ng/brain/button';
+import { BrnButton } from 'grg-ui-ui/brain/button';
 import { Observable, Subject } from 'rxjs';
 import { BrnNavigationMenuContentService } from './brn-navigation-menu-content.service';
 import { BrnNavigationMenuFocusable } from './brn-navigation-menu-item-focusable.token';

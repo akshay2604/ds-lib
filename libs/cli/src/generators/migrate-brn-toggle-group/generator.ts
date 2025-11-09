@@ -27,14 +27,14 @@ function updateImports(tree: Tree) {
 			return;
 		}
 
-		if (content.includes("'@spartan-ng/brain/toggle-group';") || content.includes("'@spartan-ng/helm/toggle-group';")) {
+		if (content.includes("'grg-ui-ui/brain/toggle-group';") || content.includes("'grg-ui-ui/helm/toggle-group';")) {
 			const updatedContent = content
-				// Handle `import { BrnToggleGroup, BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';`
-				.replace("import { BrnToggleGroup, BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';", '')
-				// Handle `import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';`
-				.replace("import { BrnToggleGroup } from '@spartan-ng/brain/toggle-group';", '')
-				// Handle `import { BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';`
-				.replace("import { BrnToggleGroupItem } from '@spartan-ng/brain/toggle-group';", '')
+				// Handle `import { BrnToggleGroup, BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';`
+				.replace("import { BrnToggleGroup, BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';", '')
+				// Handle `import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';`
+				.replace("import { BrnToggleGroup } from 'grg-ui-ui/brain/toggle-group';", '')
+				// Handle `import { BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';`
+				.replace("import { BrnToggleGroupItem } from 'grg-ui-ui/brain/toggle-group';", '')
 				// Remove `BrnToggleGroupItem` with optional comma and whitespace
 				.replace(/BrnToggleGroupItem,?\s?/, '')
 				// Remove `BrnToggleGroup` with optional comma and whitespace
@@ -59,7 +59,7 @@ function replaceSelector(tree: Tree) {
 			return;
 		}
 
-		if (content.includes('brn-toggle-group') || content.includes('@spartan-ng/helm/toggle-group')) {
+		if (content.includes('brn-toggle-group') || content.includes('grg-ui-ui/helm/toggle-group')) {
 			// <brn-toggle-group hlm but between
 			content = replaceBrnToggleGroup(content);
 			// replace closing tag

@@ -1,7 +1,7 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { hlm } from '@spartan-ng/helm/utils';
+import { hlm } from 'grg-ui-ui/helm/utils';
 
-import { HlmSkeletonImports } from '@spartan-ng/helm/skeleton';
+import { HlmSkeletonImports } from 'grg-ui-ui/helm/skeleton';
 import type { ClassValue } from 'clsx';
 
 @Component({

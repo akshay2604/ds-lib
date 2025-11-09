@@ -1,5 +1,5 @@
 import { Directive, computed, inject } from '@angular/core';
-import { BrnAvatarFallback } from '@spartan-ng/brain/avatar';
+import { BrnAvatarFallback } from 'grg-ui-ui/brain/avatar';
 import { hlm } from '<%- importAlias %>/utils';
 
 @Directive({

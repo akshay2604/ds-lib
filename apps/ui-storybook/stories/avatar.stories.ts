@@ -1,4 +1,4 @@
-import { HlmAvatar, HlmAvatarImports } from '@spartan-ng/helm/avatar';
+import { HlmAvatar, HlmAvatarImports } from 'grg-ui-ui/helm/avatar';
 import { type Meta, type StoryObj, argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 const meta: Meta<HlmAvatar> = {

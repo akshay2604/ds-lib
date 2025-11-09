@@ -2,9 +2,9 @@ import type { Meta, StoryObj } from '@storybook/angular';
 import { argsToTemplate, moduleMetadata } from '@storybook/angular';
 
 import { FormsModule } from '@angular/forms';
-import { BrnSwitch, BrnSwitchImports } from '@spartan-ng/brain/switch';
-import { HlmLabel } from '@spartan-ng/helm/label';
-import { HlmSwitch, HlmSwitchImports } from '@spartan-ng/helm/switch';
+import { BrnSwitch, BrnSwitchImports } from 'grg-ui-ui/brain/switch';
+import { HlmLabel } from 'grg-ui-ui/helm/label';
+import { HlmSwitch, HlmSwitchImports } from 'grg-ui-ui/helm/switch';
 
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 

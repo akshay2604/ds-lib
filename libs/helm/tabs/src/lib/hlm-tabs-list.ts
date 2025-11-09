@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnTabsList } from '@spartan-ng/brain/tabs';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnTabsList } from 'grg-ui-ui/brain/tabs';
+import { hlm } from 'grg-ui-ui/helm/utils';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 

@@ -1,5 +1,5 @@
 import { Directive, computed, input, signal } from '@angular/core';
-import { BrnButton } from '@spartan-ng/brain/button';
+import { BrnButton } from 'grg-ui-ui/brain/button';
 import { hlm } from '<%- importAlias %>/utils';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';

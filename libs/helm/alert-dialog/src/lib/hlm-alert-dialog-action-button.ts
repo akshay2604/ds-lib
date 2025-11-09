@@ -1,5 +1,5 @@
 import { Directive } from '@angular/core';
-import { HlmButton } from '@spartan-ng/helm/button';
+import { HlmButton } from 'grg-ui-ui/helm/button';
 
 @Directive({
 	selector: 'button[hlmAlertDialogAction]',

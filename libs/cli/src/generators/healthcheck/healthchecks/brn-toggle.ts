@@ -23,7 +23,7 @@ export const brainToggleHealthcheck: Healthcheck = {
 			}
 
 			if (
-				contents.includes("import { BrnToggle } from '@spartan-ng/brain/toggle';") ||
+				contents.includes("import { BrnToggle } from 'grg-ui-ui/brain/toggle';") ||
 				contents.includes('brnToggle')
 			) {
 				failure(`The brnToggle directive can be replace with hlmToggle instead.`, HealthcheckSeverity.Error, true);

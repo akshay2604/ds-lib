@@ -9,4 +9,4 @@ export const [
 	provideCustomClassSettable,
 	provideCustomClassSettableExisting,
 	SET_CLASS_TO_CUSTOM_ELEMENT_TOKEN,
-] = createInjectionToken<CustomElementClassSettable>('@spartan-ng SET_CLASS_TO_CUSTOM_ELEMENT_TOKEN');
+] = createInjectionToken<CustomElementClassSettable>('grg-ui-ui SET_CLASS_TO_CUSTOM_ELEMENT_TOKEN');

@@ -2,7 +2,7 @@
 	"name": "ui-storybook",
 	"$schema": "../../node_modules/nx/schemas/project-schema.json",
 	"sourceRoot": "apps/ui-storybook/src",
-	"prefix": "spartan-ng",
+	"prefix": "grg-ui",
 	"projectType": "library",
 	"tags": [],
 	"targets": {

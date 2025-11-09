@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { provideCustomClassSettableExisting } from '@spartan-ng/brain/core';
-import { BrnDialogOverlay } from '@spartan-ng/brain/dialog';
+import { provideCustomClassSettableExisting } from 'grg-ui-ui/brain/core';
+import { BrnDialogOverlay } from 'grg-ui-ui/brain/dialog';
 
 @Component({
 	selector: 'brn-sheet-overlay',

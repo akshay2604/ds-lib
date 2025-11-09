@@ -1,3 +1,3 @@
-# @spartan-ng/helm/radio-group
+# grg-ui-ui/helm/radio-group
 
-Secondary entry point of `@spartan-ng/helm`. It can be used by importing from `@spartan-ng/helm/radio-group`.
+Secondary entry point of `grg-ui-ui/helm`. It can be used by importing from `grg-ui-ui/helm/radio-group`.

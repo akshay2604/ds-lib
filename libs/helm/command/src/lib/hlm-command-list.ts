@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnCommandList } from '@spartan-ng/brain/command';
-import { hlm } from '@spartan-ng/helm/utils';
+import { BrnCommandList } from 'grg-ui-ui/brain/command';
+import { hlm } from 'grg-ui-ui/helm/utils';
 
 @Component({
 	selector: 'hlm-command-list',

@@ -41,7 +41,7 @@ describe('migrate-core generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { hlm } from '@spartan-ng/ui-core';
+			import { hlm } from 'grg-ui-ui/ui-core';
 
 			@Component({
 				template: \`
@@ -54,7 +54,7 @@ describe('migrate-core generator', () => {
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`import { hlm } from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`import { hlm } from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update the import statements with multiple imports', async () => {
@@ -62,7 +62,7 @@ describe('migrate-core generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import { hlm, brnZoneFull, createInjectionToken, ExposesState } from '@spartan-ng/ui-core';
+			import { hlm, brnZoneFull, createInjectionToken, ExposesState } from 'grg-ui-ui/ui-core';
 
 			@Component({
 				template: \`
@@ -76,7 +76,7 @@ describe('migrate-core generator', () => {
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
 		expect(content).toContain(
-			`import { hlm, brnZoneFull, createInjectionToken, ExposesState } from '@spartan-ng/brain/core';`,
+			`import { hlm, brnZoneFull, createInjectionToken, ExposesState } from 'grg-ui-ui/brain/core';`,
 		);
 	});
 
@@ -85,7 +85,7 @@ describe('migrate-core generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import type { hlm } from '@spartan-ng/ui-core';
+			import type { hlm } from 'grg-ui-ui/ui-core';
 
 			@Component({
 				template: \`
@@ -98,7 +98,7 @@ describe('migrate-core generator', () => {
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`import type { hlm } from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`import type { hlm } from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update default imports', async () => {
@@ -106,7 +106,7 @@ describe('migrate-core generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import hlm from '@spartan-ng/ui-core';
+			import hlm from 'grg-ui-ui/ui-core';
 
 			@Component({
 				template: \`
@@ -119,7 +119,7 @@ describe('migrate-core generator', () => {
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`import hlm from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`import hlm from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update star imports', async () => {
@@ -127,7 +127,7 @@ describe('migrate-core generator', () => {
 			'app/src/app/app.component.ts',
 			`
 			import { Component } from '@angular/core';
-			import * as hlm from '@spartan-ng/ui-core';
+			import * as hlm from 'grg-ui-ui/ui-core';
 
 			@Component({
 				template: \`
@@ -140,33 +140,33 @@ describe('migrate-core generator', () => {
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`import * as hlm from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`import * as hlm from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update exports', async () => {
 		tree.write(
 			'app/src/app/app.component.ts',
 			`
-			export { hlm } from '@spartan-ng/ui-core';
+			export { hlm } from 'grg-ui-ui/ui-core';
 			`,
 		);
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`export { hlm } from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`export { hlm } from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update star exports', async () => {
 		tree.write(
 			'app/src/app/app.component.ts',
 			`
-			export * from '@spartan-ng/ui-core';
+			export * from 'grg-ui-ui/ui-core';
 			`,
 		);
 		await migrateCoreGenerator(tree, options);
 
 		const content = tree.read('app/src/app/app.component.ts', 'utf-8');
-		expect(content).toContain(`export * from '@spartan-ng/brain/core';`);
+		expect(content).toContain(`export * from 'grg-ui-ui/brain/core';`);
 	});
 
 	it('should update the tailwind config file', async () => {
@@ -175,7 +175,7 @@ describe('migrate-core generator', () => {
 			`
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	presets: [require('@spartan-ng/ui-core/hlm-tailwind-preset')],
+	presets: [require('grg-ui-ui/ui-core/hlm-tailwind-preset')],
 	content: [
 		'./src/**/*.{html,ts}',
 	],
@@ -192,7 +192,7 @@ module.exports = {
 		const content = tree.read('app/tailwind.config.js', 'utf-8');
 		expect(content).toContain(`/** @type {import('tailwindcss').Config} */
 module.exports = {
-	presets: [require('@spartan-ng/brain/hlm-tailwind-preset')],
+	presets: [require('grg-ui-ui/brain/hlm-tailwind-preset')],
 	content: [
 		'./src/**/*.{html,ts}',
 	],

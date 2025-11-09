@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { BrnAutocompleteList } from '@spartan-ng/brain/autocomplete';
+import { BrnAutocompleteList } from 'grg-ui-ui/brain/autocomplete';
 import { hlm } from '<%- importAlias %>/utils';
 
 @Component({

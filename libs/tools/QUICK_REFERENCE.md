@@ -6,7 +6,7 @@
 
 ```bash
 # Complete component with story and documentation
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=my-component \
   --generate=component \
   --story=true \
@@ -14,7 +14,7 @@ nx g @spartan-ng/tools:helm-secondary-entrypoint \
   --description="My awesome component"
 
 # Component only
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=my-component \
   --generate=component
 ```
@@ -23,13 +23,13 @@ nx g @spartan-ng/tools:helm-secondary-entrypoint \
 
 ```bash
 # Complete directive with story
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=my-directive \
   --generate=directive \
   --story=true
 
 # Directive only
-nx g @spartan-ng/tools:helm-directive \
+nx g grg-ui-ui/tools:helm-directive \
   --directiveName=my-directive \
   --entrypoint=existing-entrypoint
 ```
@@ -38,12 +38,12 @@ nx g @spartan-ng/tools:helm-directive \
 
 ```bash
 # Add component to existing entrypoint
-nx g @spartan-ng/tools:helm-component \
+nx g grg-ui-ui/tools:helm-component \
   --componentName=additional-component \
   --entrypoint=existing-entrypoint
 
 # Add directive to existing entrypoint
-nx g @spartan-ng/tools:helm-directive \
+nx g grg-ui-ui/tools:helm-directive \
   --directiveName=additional-directive \
   --entrypoint=existing-entrypoint
 ```
@@ -53,7 +53,7 @@ nx g @spartan-ng/tools:helm-directive \
 ### Generate Storybook Story
 
 ```bash
-nx g @spartan-ng/tools:helm-story \
+nx g grg-ui-ui/tools:helm-story \
   --entrypoint=button \
   --componentName=HlmButton
 ```
@@ -61,7 +61,7 @@ nx g @spartan-ng/tools:helm-story \
 ### Generate Documentation Page
 
 ```bash
-nx g @spartan-ng/tools:helm-documentation \
+nx g grg-ui-ui/tools:helm-documentation \
   --name=button \
   --description="Interactive button component with multiple variants"
 ```
@@ -70,7 +70,7 @@ nx g @spartan-ng/tools:helm-documentation \
 
 ```bash
 # Extract all primitive code snippets for documentation
-nx g @spartan-ng/tools:generate-primitive-snippets
+nx g grg-ui-ui/tools:generate-primitive-snippets
 ```
 
 ### Generate API Documentation
@@ -93,7 +93,7 @@ nx run tools:generate-ui-docs \
 
 ```bash
 # Convert all Helm entrypoints to CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # This automatically:
 # - Scans all Helm library entrypoints
@@ -108,21 +108,21 @@ nx g @spartan-ng/tools:hlm-to-cli-generator
 
 ```bash
 # Automatically increment version for nightly releases
-nx g @spartan-ng/tools:auto-increment-version
+nx g grg-ui-ui/tools:auto-increment-version
 ```
 
 ### Update UI Library Versions
 
 ```bash
 # Update versions across all UI libraries and CLI references
-nx g @spartan-ng/tools:replace-ui-version
+nx g grg-ui-ui/tools:replace-ui-version
 ```
 
 ### Update CLI Version
 
 ```bash
 # Update CLI package version
-nx g @spartan-ng/tools:replace-cli-version
+nx g grg-ui-ui/tools:replace-cli-version
 ```
 
 ## Release Management
@@ -150,7 +150,7 @@ nx run tools:build-update-publish
 
 ```bash
 # 1. Create component with all scaffolding
-nx g @spartan-ng/tools:helm-secondary-entrypoint \
+nx g grg-ui-ui/tools:helm-secondary-entrypoint \
   --name=new-component \
   --generate=component \
   --story=true \
@@ -158,24 +158,24 @@ nx g @spartan-ng/tools:helm-secondary-entrypoint \
   --description="Description of the new component"
 
 # 2. Update CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # 3. Generate API documentation
 nx run tools:generate-ui-docs
 
 # 4. Extract code snippets
-nx g @spartan-ng/tools:generate-primitive-snippets
+nx g grg-ui-ui/tools:generate-primitive-snippets
 ```
 
 ### Pre-Release Workflow
 
 ```bash
 # 1. Update all versions
-nx g @spartan-ng/tools:replace-ui-version
-nx g @spartan-ng/tools:replace-cli-version
+nx g grg-ui-ui/tools:replace-ui-version
+nx g grg-ui-ui/tools:replace-cli-version
 
 # 2. Update CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # 3. Format and lint
 pnpm run format
@@ -183,17 +183,17 @@ nx run tools:lint --fix
 
 # 4. Generate documentation
 nx run tools:generate-ui-docs
-nx g @spartan-ng/tools:generate-primitive-snippets
+nx g grg-ui-ui/tools:generate-primitive-snippets
 ```
 
 ### Nightly Release Workflow
 
 ```bash
 # 1. Auto-increment versions
-nx g @spartan-ng/tools:auto-increment-version
+nx g grg-ui-ui/tools:auto-increment-version
 
 # 2. Update CLI generators
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 
 # 3. Format and lint
 pnpm run format
@@ -291,7 +291,7 @@ ls libs/helm/{entrypoint}
 **CLI generator not created:**
 ```bash
 # Run the hlm-to-cli-generator after creating components
-nx g @spartan-ng/tools:hlm-to-cli-generator
+nx g grg-ui-ui/tools:hlm-to-cli-generator
 ```
 
 **Documentation not generated:**
@@ -312,10 +312,10 @@ find . -name "package.json" -type f
 
 ```bash
 # Verbose output for generators
-nx g @spartan-ng/tools:helm-component --componentName=test --entrypoint=test --verbose
+nx g grg-ui-ui/tools:helm-component --componentName=test --entrypoint=test --verbose
 
 # Dry run to preview changes
-nx g @spartan-ng/tools:helm-secondary-entrypoint --name=test --dry-run
+nx g grg-ui-ui/tools:helm-secondary-entrypoint --name=test --dry-run
 
 # Check executor configuration
 nx show project tools --web
@@ -350,6 +350,6 @@ nx build helm
 
 ## Support
 
-- [GitHub Issues](https://github.com/goetzrobin/spartan/issues)
+- [GitHub Issues](https://github.com/goetzrobin/grg-ui/issues)
 - [Discord Community](https://discord.gg/EqHnxQ4uQr)
-- [Documentation](https://spartan.ng)
+- [Documentation](https://grg-ui.ng)
